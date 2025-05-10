@@ -1,0 +1,22 @@
+[project]
+name = "tsu-nlp"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ilya Uimanov",email = "ninjaxxxflame@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "optuna (>=4.3.0,<5.0.0)",
+    "clearml (>=1.18.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "tsu_nlp", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
