@@ -1,4 +1,4 @@
-# MlOpsWithCats
+# Natural Language Processing and Triton Inference Server
 *In progress...*
 
 ## Project setup:
