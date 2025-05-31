@@ -14,6 +14,8 @@ from tsu_nlp.model.logger import SingletonLogger
 import torch
 from transformers import T5ForConditionalGeneration, GPT2Tokenizer
 from tqdm import tqdm
+import onnxruntime as ort
+import numpy as np
 
 # Инициализация задачи ClearML
 # task = Task.init(
@@ -30,6 +32,8 @@ logger = SingletonLogger().get_logger()
 # Настройка кэширования модели
 os.environ['TRANSFORMERS_CACHE'] = 'models_cache'
 MODEL_NAME = "saarus72/russian_text_normalizer"
+ONNX_MODEL_PATH = "model_repository/text_normalization/1/model.onnx"
+ONNX_ENCODER_PATH = "model_repository/text_normalization/1/encoder_model.onnx"
 
 class LoggerWriter:
     """
@@ -141,11 +145,11 @@ class My_TextNormalization_Model:
 
     def normalize_two(self, test_mode=False):
         """
-        Комбинированный метод нормализации, использующий сначала словарь, затем нейронную модель
+        Комбинированный метод нормализации, использующий сначала словарь, затем нейронную модель с ONNX
         Args:
             test_mode (bool): If True, only process first 10 items for testing
         """
-        logger.info("Начало комбинированной нормализации (словарь + нейронная модель)...")
+        logger.info("Начало комбинированной нормализации (словарь + нейронная модель ONNX)...")
         
         # Шаг 1: Попытка нормализации через словарь
         logger.info("Шаг 1: Применение словарной нормализации...")
@@ -169,99 +173,133 @@ class My_TextNormalization_Model:
             dict_results[['id', 'after']].to_csv(self.result_path, index=False, encoding='utf-8')
             return
             
-        # Шаг 2: Нейронная нормализация для оставшихся токенов
-        logger.info("Шаг 2: Применение нейронной нормализации для оставшихся токенов...")
+        # Шаг 2: Нейронная нормализация для оставшихся токенов с использованием ONNX
+        logger.info("Шаг 2: Применение нейронной нормализации (ONNX) для оставшихся токенов...")
         
         try:
-            logger.info("Загрузка модели и токенизатора...")
+            logger.info("Загрузка модели ONNX и токенизатора...")
             
-            # Check if model is already cached
-            cache_dir = Path('models_cache')
-            if not (cache_dir / 'model').exists():
-                logger.info("Загрузка модели из Hugging Face...")
-            else:
-                logger.info("Использование кэшированной модели...")
+            # Initialize tokenizer
+            tokenizer = GPT2Tokenizer.from_pretrained(MODEL_NAME, cache_dir='models_cache')
+            
+            # Set up ONNX Runtime session with optimizations
+            sess_options = ort.SessionOptions()
+            sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
+            sess_options.intra_op_num_threads = 1
+            sess_options.inter_op_num_threads = 1
+            
+            # Create ONNX Runtime session
+            providers = ['CPUExecutionProvider']  # Start with CPU provider
+            try:
+                if 'CUDAExecutionProvider' in ort.get_available_providers():
+                    providers = ['CUDAExecutionProvider', 'CPUExecutionProvider']
+                    logger.info("CUDA доступен. Используется GPU для ONNX Runtime")
+                else:
+                    logger.warning("CUDA недоступен. Используется CPU для ONNX Runtime")
+            except Exception as e:
+                logger.warning(f"Ошибка при проверке CUDA: {str(e)}. Используется CPU.")
                 
-            if torch.cuda.is_available():
-                logger.info(f"CUDA доступен. Используется GPU: {torch.cuda.get_device_name(0)}")
-                device = torch.device("cuda")
-                torch.cuda.empty_cache()
-                torch.backends.cudnn.benchmark = True
-                torch.backends.cuda.matmul.allow_tf32 = True
-                torch.backends.cudnn.allow_tf32 = True
-            else:
-                logger.warning("CUDA недоступен. Используется CPU.")
-                device = torch.device("cpu")
-                
-            tokenizer = GPT2Tokenizer.from_pretrained(MODEL_NAME, cache_dir=cache_dir)
-            model = T5ForConditionalGeneration.from_pretrained(
-                MODEL_NAME, 
-                cache_dir=cache_dir,
-                torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-                low_cpu_mem_usage=True,
-                use_cache=True
+            # Load encoder and decoder ONNX models
+            encoder_session = ort.InferenceSession(
+                ONNX_ENCODER_PATH,
+                providers=providers,
+                sess_options=sess_options
+            )
+            decoder_session = ort.InferenceSession(
+                ONNX_MODEL_PATH,
+                providers=providers,
+                sess_options=sess_options
             )
             
-            model = model.to(device)
-            model.eval()
+            # Get model input names
+            encoder_input_names = [input.name for input in encoder_session.get_inputs()]
+            decoder_input_names = [input.name for input in decoder_session.get_inputs()]
+            logger.info(f"Доступные входы энкодера: {encoder_input_names}")
+            logger.info(f"Доступные входы декодера: {decoder_input_names}")
             
             # Process only tokens that need neural normalization
             neural_texts = dict_results.iloc[needs_neural]
-            batch_size = 256 if torch.cuda.is_available() else 32
+            batch_size = 32  # Reduced batch size for testing
             if test_mode:
                 batch_size = 2
-                
+                neural_texts = neural_texts.head(10)  # Process only 10 items in test mode
+            
             logger.info(f"Размер батча: {batch_size}")
             normalized_neural = []
             
-            with torch.inference_mode():
-                for i in tqdm(range(0, len(neural_texts), batch_size)):
-                    batch_texts = neural_texts['before'].iloc[i:i + batch_size].tolist()
+            for i in tqdm(range(0, len(neural_texts), batch_size)):
+                batch_texts = neural_texts['before'].iloc[i:i + batch_size].tolist()
+                
+                formatted_texts = []
+                max_len = 0
+                for text in batch_texts:
+                    if text.isdigit():
+                        text_rev = text[::-1]
+                        groups = [text_rev[i:i+3][::-1] for i in range(0, len(text_rev), 3)]
+                        text = ' '.join(groups[::-1])
+                    formatted_text = f"<SC1>[{text}]<extra_id_0>"
+                    formatted_texts.append(formatted_text)
+                    max_len = max(max_len, len(formatted_text))
+                
+                # Tokenize inputs
+                inputs = tokenizer(
+                    formatted_texts, 
+                    padding=True, 
+                    truncation=True, 
+                    max_length=min(max_len + 10, 128),
+                    return_tensors="np"  # Return numpy arrays for ONNX
+                )
+                
+                # Run encoder
+                encoder_inputs = {
+                    'input_ids': inputs['input_ids'].astype(np.int64),
+                    'attention_mask': inputs['attention_mask'].astype(np.int64)
+                }
+                encoder_outputs = encoder_session.run(None, encoder_inputs)
+                
+                # Initialize decoder inputs
+                decoder_input_ids = np.array([[tokenizer.pad_token_id]] * len(batch_texts), dtype=np.int64)
+                
+                # Run decoder with encoder outputs
+                decoder_inputs = {
+                    'input_ids': decoder_input_ids,
+                    'encoder_hidden_states': encoder_outputs[0],
+                    'encoder_attention_mask': inputs['attention_mask'].astype(np.int64)
+                }
+                
+                # Generate sequence
+                max_length = min(max_len + 20, 128)
+                output_ids = [decoder_input_ids]
+                
+                for _ in range(max_length):
+                    decoder_outputs = decoder_session.run(None, decoder_inputs)
+                    next_token_logits = decoder_outputs[0][:, -1, :]
+                    next_tokens = np.argmax(next_token_logits, axis=-1)
                     
-                    formatted_texts = []
-                    max_len = 0
-                    for text in batch_texts:
-                        if text.isdigit():
-                            text_rev = text[::-1]
-                            groups = [text_rev[i:i+3][::-1] for i in range(0, len(text_rev), 3)]
-                            text = ' '.join(groups[::-1])
-                        formatted_text = f"<SC1>[{text}]<extra_id_0>"
-                        formatted_texts.append(formatted_text)
-                        max_len = max(max_len, len(formatted_text))
+                    # Add the predicted tokens to the sequence
+                    next_tokens = next_tokens.reshape(-1, 1)
+                    decoder_input_ids = np.concatenate([decoder_input_ids, next_tokens], axis=1)
                     
-                    inputs = tokenizer(
-                        formatted_texts, 
-                        padding=True, 
-                        truncation=True, 
-                        max_length=min(max_len + 10, 128),
-                        return_tensors="pt"
-                    )
-                    input_ids = inputs["input_ids"].to(device)
-                    attention_mask = inputs["attention_mask"].to(device)
-
-                    outputs = model.generate(
-                        input_ids=input_ids,
-                        attention_mask=attention_mask,
-                        max_length=min(max_len + 20, 128),
-                        num_beams=2,
-                        early_stopping=True,
-                        do_sample=False,
-                        use_cache=True,
-                        eos_token_id=tokenizer.eos_token_id
-                    )
-
-                    decoded_outputs = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+                    # Update decoder inputs for next iteration
+                    decoder_inputs['input_ids'] = decoder_input_ids
                     
-                    cleaned_outputs = []
-                    for output in decoded_outputs:
-                        text = output.replace("<SC1>", "").replace("<extra_id_0>", "").strip()
-                        text = text.strip('[]')
-                        cleaned_outputs.append(text)
-                    
-                    normalized_neural.extend(cleaned_outputs)
+                    # Check if all sequences have generated EOS token
+                    if all(tokenizer.eos_token_id in seq for seq in decoder_input_ids):
+                        break
+                
+                # Decode outputs
+                decoded_outputs = tokenizer.batch_decode(decoder_input_ids, skip_special_tokens=True)
+                
+                cleaned_outputs = []
+                for output in decoded_outputs:
+                    text = output.replace("<SC1>", "").replace("<extra_id_0>", "").strip()
+                    text = text.strip('[]')
+                    cleaned_outputs.append(text)
+                
+                normalized_neural.extend(cleaned_outputs)
             
             # Update results with neural normalization
-            for idx, neural_text in zip(needs_neural, normalized_neural):
+            for idx, neural_text in zip(needs_neural[:len(normalized_neural)], normalized_neural):
                 dict_results.at[idx, 'after'] = neural_text
             
             # Save final results
@@ -272,6 +310,8 @@ class My_TextNormalization_Model:
 
         except Exception as e:
             logger.error(f"Ошибка при нейронной нормализации: {str(e)}")
+            import traceback
+            logger.error(traceback.format_exc())
             return
 
     def normalize_text(self, test_mode=False):

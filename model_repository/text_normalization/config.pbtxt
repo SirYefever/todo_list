@@ -1,5 +1,6 @@
 name: "text_normalization"
-platform: "pytorch"
+backend: "tensorrt"
+platform: "tensorrt_plan"
 max_batch_size: 8
 
 input [
@@ -17,9 +18,14 @@ input [
 
 output [
   {
-    name: "output_ids"
-    data_type: TYPE_INT64
-    dims: [ -1 ]  # Variable sequence length for generated text
+    name: "encoder_last_hidden_state"
+    data_type: TYPE_FP32
+    dims: [ -1, 1024 ]  # [sequence_length, hidden_size]
+  },
+  {
+    name: "logits"
+    data_type: TYPE_FP32
+    dims: [ -1, -1, 50364 ]  # [sequence_length, batch_size, vocab_size]
   }
 ]
 
@@ -41,7 +47,14 @@ optimization {
     gpu_execution_accelerator: [
       {
         name: "tensorrt"
-        parameters { key: "precision_mode" value: "FP16" }
+        parameters { 
+          key: "precision_mode" 
+          value: "FP16" 
+        }
+        parameters { 
+          key: "max_workspace_size_bytes" 
+          value: "1073741824"  # 1GB
+        }
       }
     ]
   }
