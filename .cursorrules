@@ -1,0 +1,38 @@
+{
+    "rules": [
+        {
+            "name": "Text Normalization Input Format",
+            "pattern": "^\\d+,\\d+,[^,]+$",
+            "message": "Input CSV lines must follow format: sentence_id,token_id,before"
+        },
+        {
+            "name": "Text Normalization Output Format",
+            "pattern": "^\\d+_\\d+,[^,]+$",
+            "message": "Output CSV lines must follow format: id,after where id is sentence_id_token_id"
+        },
+        {
+            "name": "Russian Text Characters",
+            "pattern": "[а-яА-ЯёЁ]",
+            "message": "Text content must contain Russian characters"
+        },
+        {
+            "name": "T5 Model Import",
+            "pattern": "from transformers import T5.*",
+            "message": "Required T5 model imports for text normalization"
+        },
+        {
+            "name": "CSV File Handling",
+            "pattern": "pd\\.read_csv|to_csv",
+            "message": "Use pandas for CSV file operations"
+        }
+    ],
+    "ignorePatterns": [
+        "*.pyc",
+        "__pycache__",
+        "*.log"
+    ],
+    "customCommands": {
+        "normalize": "python -m src.tsu_nlp.model.model normalize neural",
+        "train-dict": "python -m src.tsu_nlp.model.model train dictionary"
+    }
+} 

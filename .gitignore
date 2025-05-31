@@ -2,3 +2,4 @@
 inputs
 /data
 /models_cache
+/model_repository/text_normalization/1/model.pt
