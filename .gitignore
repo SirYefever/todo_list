@@ -1,2 +1,4 @@
 /src/tsu_nlp/data/inputs
 inputs
+/data
+/models_cache

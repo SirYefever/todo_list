@@ -1,0 +1,1057 @@
+2025-05-30 18:19:39,537 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:19:39,538 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:19:39,539 - tsu_nlp.model.logger.normalize_text - ERROR - Не удалось загрузить тестовый датасет: [Errno 2] No such file or directory: '../data/inputs/ru_test_2.csv'
+2025-05-30 18:24:28,502 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:24:28,503 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:24:29,123 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:24:29,123 - tsu_nlp.model.logger.normalize_text - ERROR - Не удалось загрузить модель: 
+T5Tokenizer requires the SentencePiece library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/google/sentencepiece#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+2025-05-30 18:24:54,305 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:24:54,305 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:24:54,890 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:24:54,890 - tsu_nlp.model.logger.normalize_text - ERROR - Не удалось загрузить модель: 
+T5Tokenizer requires the SentencePiece library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/google/sentencepiece#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+2025-05-30 18:25:28,961 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:25:28,961 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:25:29,556 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:25:30,300 - tsu_nlp.model.logger.write - ERROR - tokenizer_config.json:   0%|                                                   | 0.00/20.3k [00:00<?, ?B/s]
+2025-05-30 18:25:30,301 - tsu_nlp.model.logger.write - ERROR - tokenizer_config.json: 100%|██████████████████████████████████████████| 20.3k/20.3k [00:00<00:00, 39.2MB/s]
+2025-05-30 18:25:30,304 - tsu_nlp.model.logger.write - ERROR - C:\Users\Xee\AppData\Local\pypoetry\Cache\virtualenvs\tsu-nlp-FP3zCz-t-py3.12\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Xee\.cache\huggingface\hub\models--saarus72--russian_text_normalizer. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+2025-05-30 18:25:31,127 - tsu_nlp.model.logger.write - ERROR - added_tokens.json:   0%|                                                       | 0.00/2.72k [00:00<?, ?B/s]
+2025-05-30 18:25:31,127 - tsu_nlp.model.logger.write - ERROR - added_tokens.json: 100%|██████████████████████████████████████████████████████| 2.72k/2.72k [00:00<?, ?B/s]
+2025-05-30 18:25:31,534 - tsu_nlp.model.logger.write - ERROR - special_tokens_map.json:   0%|                                                   | 0.00/688 [00:00<?, ?B/s]
+2025-05-30 18:25:31,535 - tsu_nlp.model.logger.write - ERROR - special_tokens_map.json: 100%|████████████████████████████████████████████████████| 688/688 [00:00<?, ?B/s]
+2025-05-30 18:25:32,138 - tsu_nlp.model.logger.normalize_text - ERROR - Не удалось загрузить модель: 
+ requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+2025-05-30 18:26:07,698 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:26:07,698 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:26:08,279 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:26:08,996 - tsu_nlp.model.logger.normalize_text - ERROR - Не удалось загрузить модель: not a string
+2025-05-30 18:26:33,291 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:26:33,292 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:26:33,877 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:26:34,948 - tsu_nlp.model.logger.write - ERROR - vocab.json:   0%|                                                              | 0.00/1.81M [00:00<?, ?B/s]
+2025-05-30 18:26:35,511 - tsu_nlp.model.logger.write - ERROR - vocab.json: 100%|█████████████████████████████████████████████████████| 1.81M/1.81M [00:00<00:00, 3.22MB/s]
+2025-05-30 18:26:35,512 - tsu_nlp.model.logger.write - ERROR - vocab.json: 100%|█████████████████████████████████████████████████████| 1.81M/1.81M [00:00<00:00, 3.22MB/s]
+2025-05-30 18:26:35,516 - tsu_nlp.model.logger.write - ERROR - C:\Users\Xee\AppData\Local\pypoetry\Cache\virtualenvs\tsu-nlp-FP3zCz-t-py3.12\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Xee\.cache\huggingface\hub\models--saarus72--russian_text_normalizer. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+2025-05-30 18:26:35,934 - tsu_nlp.model.logger.write - ERROR - merges.txt:   0%|                                                              | 0.00/1.27M [00:00<?, ?B/s]
+2025-05-30 18:26:36,273 - tsu_nlp.model.logger.write - ERROR - merges.txt: 100%|█████████████████████████████████████████████████████| 1.27M/1.27M [00:00<00:00, 3.76MB/s]
+2025-05-30 18:26:36,273 - tsu_nlp.model.logger.write - ERROR - merges.txt: 100%|█████████████████████████████████████████████████████| 1.27M/1.27M [00:00<00:00, 3.75MB/s]
+2025-05-30 18:26:36,729 - tsu_nlp.model.logger.write - ERROR - config.json:   0%|                                                               | 0.00/857 [00:00<?, ?B/s]
+2025-05-30 18:26:36,729 - tsu_nlp.model.logger.write - ERROR - config.json: 100%|████████████████████████████████████████████████████████| 857/857 [00:00<00:00, 21.3MB/s]
+2025-05-30 18:26:37,595 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   0%|                                                       | 0.00/3.28G [00:00<?, ?B/s]
+2025-05-30 18:26:38,534 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   0%|▏                                             | 10.5M/3.28G [00:00<04:52, 11.2MB/s]
+2025-05-30 18:26:38,653 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   1%|▎                                             | 21.0M/3.28G [00:01<02:22, 23.0MB/s]
+2025-05-30 18:26:38,768 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   1%|▍                                             | 31.5M/3.28G [00:01<01:33, 34.9MB/s]
+2025-05-30 18:26:39,927 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   1%|▌                                             | 41.9M/3.28G [00:02<03:17, 16.4MB/s]
+2025-05-30 18:26:40,614 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   2%|▋                                             | 52.4M/3.28G [00:03<03:22, 16.0MB/s]
+2025-05-30 18:26:40,835 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   2%|▉                                             | 62.9M/3.28G [00:03<02:36, 20.6MB/s]
+2025-05-30 18:26:41,196 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   2%|█                                             | 73.4M/3.28G [00:03<02:20, 22.8MB/s]
+2025-05-30 18:26:41,300 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   3%|█▏                                            | 83.9M/3.28G [00:03<01:45, 30.3MB/s]
+2025-05-30 18:26:42,303 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   3%|█▎                                            | 94.4M/3.28G [00:04<02:47, 19.0MB/s]
+2025-05-30 18:26:42,868 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   3%|█▌                                             | 105M/3.28G [00:05<02:48, 18.9MB/s]
+2025-05-30 18:26:43,362 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|█▋                                             | 115M/3.28G [00:05<02:42, 19.5MB/s]
+2025-05-30 18:26:43,581 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|█▊                                             | 126M/3.28G [00:05<02:12, 23.8MB/s]
+2025-05-30 18:26:44,253 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|█▉                                             | 136M/3.28G [00:06<02:33, 20.5MB/s]
+2025-05-30 18:26:44,857 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|██                                             | 147M/3.28G [00:07<02:41, 19.5MB/s]
+2025-05-30 18:26:45,462 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   5%|██▎                                            | 157M/3.28G [00:07<02:46, 18.8MB/s]
+2025-05-30 18:26:45,577 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   5%|██▍                                            | 168M/3.28G [00:07<02:06, 24.7MB/s]
+2025-05-30 18:26:45,947 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   5%|██▌                                            | 178M/3.28G [00:08<02:00, 25.7MB/s]
+2025-05-30 18:26:46,323 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   6%|██▋                                            | 189M/3.28G [00:08<01:57, 26.3MB/s]
+2025-05-30 18:26:47,033 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   6%|██▊                                            | 199M/3.28G [00:09<02:24, 21.3MB/s]
+2025-05-30 18:26:47,470 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   6%|███                                            | 210M/3.28G [00:09<02:19, 22.0MB/s]
+2025-05-30 18:26:47,860 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   7%|███▏                                           | 220M/3.28G [00:10<02:11, 23.3MB/s]
+2025-05-30 18:26:47,988 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   7%|███▎                                           | 231M/3.28G [00:10<01:42, 29.7MB/s]
+2025-05-30 18:26:48,809 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   7%|███▍                                           | 241M/3.28G [00:11<02:23, 21.2MB/s]
+2025-05-30 18:26:49,217 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   8%|███▌                                           | 252M/3.28G [00:11<02:15, 22.4MB/s]
+2025-05-30 18:26:49,621 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   8%|███▊                                           | 262M/3.28G [00:12<02:09, 23.4MB/s]
+2025-05-30 18:26:49,860 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   8%|███▉                                           | 273M/3.28G [00:12<01:50, 27.2MB/s]
+2025-05-30 18:26:50,269 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   9%|████                                           | 283M/3.28G [00:12<01:52, 26.7MB/s]
+2025-05-30 18:26:50,900 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   9%|████▏                                          | 294M/3.28G [00:13<02:12, 22.6MB/s]
+2025-05-30 18:26:51,203 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   9%|████▎                                          | 304M/3.28G [00:13<01:58, 25.2MB/s]
+2025-05-30 18:26:51,670 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  10%|████▌                                          | 315M/3.28G [00:14<02:02, 24.3MB/s]
+2025-05-30 18:26:51,899 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  10%|████▋                                          | 325M/3.28G [00:14<01:44, 28.3MB/s]
+2025-05-30 18:26:52,310 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  10%|████▊                                          | 336M/3.28G [00:14<01:47, 27.4MB/s]
+2025-05-30 18:26:52,769 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  11%|████▉                                          | 346M/3.28G [00:15<01:53, 25.9MB/s]
+2025-05-30 18:26:53,343 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  11%|█████                                          | 357M/3.28G [00:15<02:07, 23.0MB/s]
+2025-05-30 18:26:53,674 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  11%|█████▎                                         | 367M/3.28G [00:16<01:56, 25.1MB/s]
+2025-05-30 18:26:53,796 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▍                                         | 377M/3.28G [00:16<01:31, 31.8MB/s]
+2025-05-30 18:26:54,663 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▌                                         | 388M/3.28G [00:17<02:15, 21.4MB/s]
+2025-05-30 18:26:54,828 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▋                                         | 398M/3.28G [00:17<01:48, 26.7MB/s]
+2025-05-30 18:26:55,070 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▊                                         | 409M/3.28G [00:17<01:35, 30.2MB/s]
+2025-05-30 18:26:55,377 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  13%|██████                                         | 419M/3.28G [00:17<01:31, 31.3MB/s]
+2025-05-30 18:26:55,829 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  13%|██████▏                                        | 430M/3.28G [00:18<01:40, 28.3MB/s]
+2025-05-30 18:26:56,216 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  13%|██████▎                                        | 440M/3.28G [00:18<01:41, 27.9MB/s]
+2025-05-30 18:26:57,092 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  14%|██████▍                                        | 451M/3.28G [00:19<02:21, 20.0MB/s]
+2025-05-30 18:26:57,428 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  14%|██████▌                                        | 461M/3.28G [00:19<02:06, 22.4MB/s]
+2025-05-30 18:26:58,008 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  14%|██████▊                                        | 472M/3.28G [00:20<02:14, 20.9MB/s]
+2025-05-30 18:26:58,402 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  15%|██████▉                                        | 482M/3.28G [00:20<02:05, 22.3MB/s]
+2025-05-30 18:26:58,866 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  15%|███████                                        | 493M/3.28G [00:21<02:04, 22.4MB/s]
+2025-05-30 18:26:59,353 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  15%|███████▏                                       | 503M/3.28G [00:21<02:05, 22.1MB/s]
+2025-05-30 18:26:59,846 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  16%|███████▎                                       | 514M/3.28G [00:22<02:06, 21.9MB/s]
+2025-05-30 18:26:59,997 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  16%|███████▌                                       | 524M/3.28G [00:22<01:40, 27.5MB/s]
+2025-05-30 18:27:00,428 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  16%|███████▋                                       | 535M/3.28G [00:22<01:43, 26.5MB/s]
+2025-05-30 18:27:00,758 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  17%|███████▊                                       | 545M/3.28G [00:23<01:38, 27.9MB/s]
+2025-05-30 18:27:00,907 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  17%|███████▉                                       | 556M/3.28G [00:23<01:20, 34.0MB/s]
+2025-05-30 18:27:01,612 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  17%|████████                                       | 566M/3.28G [00:24<01:50, 24.6MB/s]
+2025-05-30 18:27:01,986 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  18%|████████▎                                      | 577M/3.28G [00:24<01:46, 25.5MB/s]
+2025-05-30 18:27:02,470 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  18%|████████▍                                      | 587M/3.28G [00:24<01:51, 24.2MB/s]
+2025-05-30 18:27:02,601 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  18%|████████▌                                      | 598M/3.28G [00:25<01:27, 30.6MB/s]
+2025-05-30 18:27:03,258 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|████████▋                                      | 608M/3.28G [00:25<01:51, 24.0MB/s]
+2025-05-30 18:27:03,664 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|████████▊                                      | 619M/3.28G [00:26<01:48, 24.5MB/s]
+2025-05-30 18:27:04,108 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|█████████                                      | 629M/3.28G [00:26<01:49, 24.3MB/s]
+2025-05-30 18:27:04,267 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|█████████▏                                     | 640M/3.28G [00:26<01:28, 29.9MB/s]
+2025-05-30 18:27:05,281 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  20%|█████████▎                                     | 650M/3.28G [00:27<02:17, 19.1MB/s]
+2025-05-30 18:27:05,420 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  20%|█████████▍                                     | 661M/3.28G [00:27<01:46, 24.6MB/s]
+2025-05-30 18:27:06,242 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  20%|█████████▌                                     | 671M/3.28G [00:28<02:15, 19.2MB/s]
+2025-05-30 18:27:06,893 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  21%|█████████▊                                     | 682M/3.28G [00:29<02:23, 18.2MB/s]
+2025-05-30 18:27:07,059 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  21%|█████████▉                                     | 692M/3.28G [00:29<01:52, 23.1MB/s]
+2025-05-30 18:27:07,808 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  21%|██████████                                     | 703M/3.28G [00:30<02:13, 19.3MB/s]
+2025-05-30 18:27:07,936 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  22%|██████████▏                                    | 713M/3.28G [00:30<01:42, 25.1MB/s]
+2025-05-30 18:27:08,297 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  22%|██████████▎                                    | 724M/3.28G [00:30<01:37, 26.2MB/s]
+2025-05-30 18:27:08,729 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  22%|██████████▌                                    | 734M/3.28G [00:31<01:39, 25.6MB/s]
+2025-05-30 18:27:09,016 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  23%|██████████▋                                    | 744M/3.28G [00:31<01:30, 28.1MB/s]
+2025-05-30 18:27:09,607 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  23%|██████████▊                                    | 755M/3.28G [00:32<01:45, 23.9MB/s]
+2025-05-30 18:27:10,013 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  23%|██████████▉                                    | 765M/3.28G [00:32<01:42, 24.5MB/s]
+2025-05-30 18:27:10,167 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  24%|███████████                                    | 776M/3.28G [00:32<01:22, 30.3MB/s]
+2025-05-30 18:27:10,866 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  24%|███████████▎                                   | 786M/3.28G [00:33<01:47, 23.2MB/s]
+2025-05-30 18:27:10,993 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  24%|███████████▍                                   | 797M/3.28G [00:33<01:24, 29.6MB/s]
+2025-05-30 18:27:11,613 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  25%|███████████▌                                   | 807M/3.28G [00:34<01:42, 24.1MB/s]
+2025-05-30 18:27:11,876 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  25%|███████████▋                                   | 818M/3.28G [00:34<01:29, 27.4MB/s]
+2025-05-30 18:27:12,097 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  25%|███████████▊                                   | 828M/3.28G [00:34<01:18, 31.4MB/s]
+2025-05-30 18:27:12,796 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  26%|████████████                                   | 839M/3.28G [00:35<01:43, 23.6MB/s]
+2025-05-30 18:27:12,950 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  26%|████████████▏                                  | 849M/3.28G [00:35<01:22, 29.4MB/s]
+2025-05-30 18:27:13,558 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  26%|████████████▎                                  | 860M/3.28G [00:35<01:39, 24.3MB/s]
+2025-05-30 18:27:13,994 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▍                                  | 870M/3.28G [00:36<01:39, 24.2MB/s]
+2025-05-30 18:27:14,411 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▌                                  | 881M/3.28G [00:36<01:38, 24.5MB/s]
+2025-05-30 18:27:14,893 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▊                                  | 891M/3.28G [00:37<01:41, 23.6MB/s]
+2025-05-30 18:27:15,044 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▉                                  | 902M/3.28G [00:37<01:20, 29.4MB/s]
+2025-05-30 18:27:15,724 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  28%|█████████████                                  | 912M/3.28G [00:38<01:42, 23.1MB/s]
+2025-05-30 18:27:16,166 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  28%|█████████████▏                                 | 923M/3.28G [00:38<01:41, 23.3MB/s]
+2025-05-30 18:27:16,582 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  28%|█████████████▎                                 | 933M/3.28G [00:38<01:38, 23.8MB/s]
+2025-05-30 18:27:17,175 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  29%|█████████████▌                                 | 944M/3.28G [00:39<01:48, 21.6MB/s]
+2025-05-30 18:27:17,354 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  29%|█████████████▋                                 | 954M/3.28G [00:39<01:27, 26.6MB/s]
+2025-05-30 18:27:17,896 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  29%|█████████████▊                                 | 965M/3.28G [00:40<01:36, 23.9MB/s]
+2025-05-30 18:27:18,698 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  30%|█████████████▉                                 | 975M/3.28G [00:41<02:00, 19.2MB/s]
+2025-05-30 18:27:19,222 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  30%|██████████████                                 | 986M/3.28G [00:41<01:58, 19.4MB/s]
+2025-05-30 18:27:19,770 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  30%|██████████████▎                                | 996M/3.28G [00:42<01:58, 19.3MB/s]
+2025-05-30 18:27:20,056 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  31%|██████████████                                | 1.01G/3.28G [00:42<01:41, 22.5MB/s]
+2025-05-30 18:27:20,495 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  31%|██████████████▎                               | 1.02G/3.28G [00:42<01:38, 22.9MB/s]
+2025-05-30 18:27:21,029 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  31%|██████████████▍                               | 1.03G/3.28G [00:43<01:43, 21.8MB/s]
+2025-05-30 18:27:21,458 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  32%|██████████████▌                               | 1.04G/3.28G [00:43<01:39, 22.6MB/s]
+2025-05-30 18:27:22,068 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  32%|██████████████▋                               | 1.05G/3.28G [00:44<01:48, 20.6MB/s]
+2025-05-30 18:27:22,988 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  32%|██████████████▊                               | 1.06G/3.28G [00:45<02:13, 16.6MB/s]
+2025-05-30 18:27:23,495 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  33%|██████████████▉                               | 1.07G/3.28G [00:45<02:05, 17.6MB/s]
+2025-05-30 18:27:23,816 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  33%|███████████████▏                              | 1.08G/3.28G [00:46<01:47, 20.5MB/s]
+2025-05-30 18:27:24,162 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  33%|███████████████▎                              | 1.09G/3.28G [00:46<01:36, 22.7MB/s]
+2025-05-30 18:27:24,593 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  34%|███████████████▍                              | 1.10G/3.28G [00:46<01:34, 23.1MB/s]
+2025-05-30 18:27:25,205 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  34%|███████████████▌                              | 1.11G/3.28G [00:47<01:43, 20.9MB/s]
+2025-05-30 18:27:26,216 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  34%|███████████████▋                              | 1.12G/3.28G [00:48<02:14, 16.0MB/s]
+2025-05-30 18:27:26,459 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|███████████████▊                              | 1.13G/3.28G [00:48<01:48, 19.8MB/s]
+2025-05-30 18:27:27,019 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|████████████████                              | 1.14G/3.28G [00:49<01:50, 19.4MB/s]
+2025-05-30 18:27:27,299 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|████████████████▏                             | 1.15G/3.28G [00:49<01:33, 22.7MB/s]
+2025-05-30 18:27:27,484 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|████████████████▎                             | 1.16G/3.28G [00:49<01:16, 27.7MB/s]
+2025-05-30 18:27:28,315 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  36%|████████████████▍                             | 1.17G/3.28G [00:50<01:43, 20.4MB/s]
+2025-05-30 18:27:28,646 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  36%|████████████████▌                             | 1.18G/3.28G [00:51<01:31, 22.8MB/s]
+2025-05-30 18:27:29,024 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  36%|████████████████▊                             | 1.20G/3.28G [00:51<01:26, 24.1MB/s]
+2025-05-30 18:27:29,467 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  37%|████████████████▉                             | 1.21G/3.28G [00:51<01:26, 24.0MB/s]
+2025-05-30 18:27:29,950 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  37%|█████████████████                             | 1.22G/3.28G [00:52<01:28, 23.2MB/s]
+2025-05-30 18:27:30,867 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  37%|█████████████████▏                            | 1.23G/3.28G [00:53<01:55, 17.7MB/s]
+2025-05-30 18:27:31,499 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  38%|█████████████████▎                            | 1.24G/3.28G [00:53<01:57, 17.4MB/s]
+2025-05-30 18:27:31,777 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  38%|█████████████████▍                            | 1.25G/3.28G [00:54<01:38, 20.7MB/s]
+2025-05-30 18:27:31,976 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  38%|█████████████████▋                            | 1.26G/3.28G [00:54<01:19, 25.4MB/s]
+2025-05-30 18:27:32,130 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  39%|█████████████████▊                            | 1.27G/3.28G [00:54<01:04, 31.2MB/s]
+2025-05-30 18:27:32,660 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  39%|█████████████████▉                            | 1.28G/3.28G [00:55<01:15, 26.6MB/s]
+2025-05-30 18:27:32,817 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  39%|██████████████████                            | 1.29G/3.28G [00:55<01:01, 32.5MB/s]
+2025-05-30 18:27:33,676 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  40%|██████████████████▏                           | 1.30G/3.28G [00:56<01:31, 21.7MB/s]
+2025-05-30 18:27:33,831 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  40%|██████████████████▎                           | 1.31G/3.28G [00:56<01:12, 27.3MB/s]
+2025-05-30 18:27:34,765 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  40%|██████████████████▌                           | 1.32G/3.28G [00:57<01:42, 19.1MB/s]
+2025-05-30 18:27:34,970 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  41%|██████████████████▋                           | 1.33G/3.28G [00:57<01:23, 23.5MB/s]
+2025-05-30 18:27:35,462 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  41%|██████████████████▊                           | 1.34G/3.28G [00:57<01:25, 22.8MB/s]
+2025-05-30 18:27:35,666 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  41%|██████████████████▉                           | 1.35G/3.28G [00:58<01:10, 27.4MB/s]
+2025-05-30 18:27:36,328 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████                           | 1.36G/3.28G [00:58<01:25, 22.5MB/s]
+2025-05-30 18:27:36,483 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████▎                          | 1.37G/3.28G [00:58<01:07, 28.1MB/s]
+2025-05-30 18:27:36,966 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████▍                          | 1.38G/3.28G [00:59<01:13, 25.8MB/s]
+2025-05-30 18:27:37,445 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████▌                          | 1.39G/3.28G [00:59<01:17, 24.5MB/s]
+2025-05-30 18:27:38,277 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  43%|███████████████████▋                          | 1.41G/3.28G [01:00<01:38, 19.1MB/s]
+2025-05-30 18:27:38,411 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  43%|███████████████████▊                          | 1.42G/3.28G [01:00<01:15, 24.7MB/s]
+2025-05-30 18:27:38,538 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  43%|███████████████████▉                          | 1.43G/3.28G [01:00<00:59, 31.3MB/s]
+2025-05-30 18:27:39,095 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  44%|████████████████████▏                         | 1.44G/3.28G [01:01<01:10, 26.1MB/s]
+2025-05-30 18:27:39,585 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  44%|████████████████████▎                         | 1.45G/3.28G [01:01<01:14, 24.5MB/s]
+2025-05-30 18:27:40,076 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  44%|████████████████████▍                         | 1.46G/3.28G [01:02<01:17, 23.4MB/s]
+2025-05-30 18:27:40,575 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  45%|████████████████████▌                         | 1.47G/3.28G [01:02<01:20, 22.7MB/s]
+2025-05-30 18:27:40,998 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  45%|████████████████████▋                         | 1.48G/3.28G [01:03<01:17, 23.3MB/s]
+2025-05-30 18:27:41,447 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  45%|████████████████████▊                         | 1.49G/3.28G [01:03<01:16, 23.3MB/s]
+2025-05-30 18:27:41,879 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  46%|█████████████████████                         | 1.50G/3.28G [01:04<01:15, 23.6MB/s]
+2025-05-30 18:27:42,455 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  46%|█████████████████████▏                        | 1.51G/3.28G [01:04<01:21, 21.7MB/s]
+2025-05-30 18:27:42,705 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  46%|█████████████████████▎                        | 1.52G/3.28G [01:05<01:09, 25.3MB/s]
+2025-05-30 18:27:43,115 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  47%|█████████████████████▍                        | 1.53G/3.28G [01:05<01:08, 25.4MB/s]
+2025-05-30 18:27:43,571 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  47%|█████████████████████▌                        | 1.54G/3.28G [01:05<01:10, 24.6MB/s]
+2025-05-30 18:27:44,013 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  47%|█████████████████████▊                        | 1.55G/3.28G [01:06<01:11, 24.4MB/s]
+2025-05-30 18:27:44,405 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  48%|█████████████████████▉                        | 1.56G/3.28G [01:06<01:08, 25.0MB/s]
+2025-05-30 18:27:44,961 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  48%|██████████████████████                        | 1.57G/3.28G [01:07<01:14, 22.8MB/s]
+2025-05-30 18:27:45,405 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  48%|██████████████████████▏                       | 1.58G/3.28G [01:07<01:13, 23.0MB/s]
+2025-05-30 18:27:45,845 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  49%|██████████████████████▎                       | 1.59G/3.28G [01:08<01:12, 23.3MB/s]
+2025-05-30 18:27:46,575 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  49%|██████████████████████▍                       | 1.60G/3.28G [01:08<01:25, 19.6MB/s]
+2025-05-30 18:27:46,708 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  49%|██████████████████████▋                       | 1.61G/3.28G [01:09<01:05, 25.3MB/s]
+2025-05-30 18:27:47,231 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|██████████████████████▊                       | 1.63G/3.28G [01:09<01:10, 23.5MB/s]
+2025-05-30 18:27:48,198 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|██████████████████████▉                       | 1.64G/3.28G [01:10<01:34, 17.4MB/s]
+2025-05-30 18:27:50,083 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|███████████████████████                       | 1.65G/3.28G [01:12<02:34, 10.6MB/s]
+2025-05-30 18:27:50,554 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|███████████████████████▏                      | 1.66G/3.28G [01:12<02:09, 12.6MB/s]
+2025-05-30 18:27:50,832 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  51%|███████████████████████▎                      | 1.67G/3.28G [01:13<01:42, 15.7MB/s]
+2025-05-30 18:27:51,029 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  51%|███████████████████████▌                      | 1.68G/3.28G [01:13<01:20, 20.0MB/s]
+2025-05-30 18:27:51,318 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  51%|███████████████████████▋                      | 1.69G/3.28G [01:13<01:09, 23.1MB/s]
+2025-05-30 18:27:51,633 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  52%|███████████████████████▊                      | 1.70G/3.28G [01:14<01:02, 25.4MB/s]
+2025-05-30 18:27:52,015 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  52%|███████████████████████▉                      | 1.71G/3.28G [01:14<01:00, 26.0MB/s]
+2025-05-30 18:27:52,752 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  52%|████████████████████████                      | 1.72G/3.28G [01:15<01:15, 20.8MB/s]
+2025-05-30 18:27:53,074 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  53%|████████████████████████▏                     | 1.73G/3.28G [01:15<01:06, 23.4MB/s]
+2025-05-30 18:27:53,709 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  53%|████████████████████████▍                     | 1.74G/3.28G [01:16<01:14, 20.8MB/s]
+2025-05-30 18:27:54,134 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  53%|████████████████████████▌                     | 1.75G/3.28G [01:16<01:10, 21.8MB/s]
+2025-05-30 18:27:54,630 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  54%|████████████████████████▋                     | 1.76G/3.28G [01:17<01:10, 21.6MB/s]
+2025-05-30 18:27:55,125 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  54%|████████████████████████▊                     | 1.77G/3.28G [01:17<01:10, 21.5MB/s]
+2025-05-30 18:27:55,620 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  54%|████████████████████████▉                     | 1.78G/3.28G [01:18<01:10, 21.4MB/s]
+2025-05-30 18:27:56,117 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  55%|█████████████████████████▏                    | 1.79G/3.28G [01:18<01:09, 21.3MB/s]
+2025-05-30 18:27:56,613 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  55%|█████████████████████████▎                    | 1.80G/3.28G [01:19<01:09, 21.2MB/s]
+2025-05-30 18:27:57,109 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  55%|█████████████████████████▍                    | 1.81G/3.28G [01:19<01:09, 21.2MB/s]
+2025-05-30 18:27:57,605 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  56%|█████████████████████████▌                    | 1.82G/3.28G [01:20<01:08, 21.2MB/s]
+2025-05-30 18:27:58,101 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  56%|█████████████████████████▋                    | 1.84G/3.28G [01:20<01:08, 21.2MB/s]
+2025-05-30 18:27:58,585 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  56%|█████████████████████████▊                    | 1.85G/3.28G [01:20<01:07, 21.3MB/s]
+2025-05-30 18:27:59,356 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  57%|██████████████████████████                    | 1.86G/3.28G [01:21<01:18, 18.2MB/s]
+2025-05-30 18:27:59,634 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  57%|██████████████████████████▏                   | 1.87G/3.28G [01:22<01:05, 21.6MB/s]
+2025-05-30 18:27:59,831 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  57%|██████████████████████████▎                   | 1.88G/3.28G [01:22<00:53, 26.2MB/s]
+2025-05-30 18:28:00,297 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▍                   | 1.89G/3.28G [01:22<00:55, 25.0MB/s]
+2025-05-30 18:28:00,654 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▌                   | 1.90G/3.28G [01:23<00:52, 26.2MB/s]
+2025-05-30 18:28:01,170 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▋                   | 1.91G/3.28G [01:23<00:57, 24.1MB/s]
+2025-05-30 18:28:01,371 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▉                   | 1.92G/3.28G [01:23<00:47, 28.7MB/s]
+2025-05-30 18:28:01,891 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  59%|███████████████████████████                   | 1.93G/3.28G [01:24<00:53, 25.5MB/s]
+2025-05-30 18:28:02,438 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  59%|███████████████████████████▏                  | 1.94G/3.28G [01:24<00:57, 23.2MB/s]
+2025-05-30 18:28:02,881 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  59%|███████████████████████████▎                  | 1.95G/3.28G [01:25<00:57, 23.3MB/s]
+2025-05-30 18:28:03,327 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  60%|███████████████████████████▍                  | 1.96G/3.28G [01:25<00:56, 23.4MB/s]
+2025-05-30 18:28:03,770 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  60%|███████████████████████████▋                  | 1.97G/3.28G [01:26<00:55, 23.5MB/s]
+2025-05-30 18:28:04,214 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  60%|███████████████████████████▊                  | 1.98G/3.28G [01:26<00:55, 23.5MB/s]
+2025-05-30 18:28:04,659 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  61%|███████████████████████████▉                  | 1.99G/3.28G [01:27<00:54, 23.5MB/s]
+2025-05-30 18:28:05,102 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  61%|████████████████████████████                  | 2.00G/3.28G [01:27<00:54, 23.6MB/s]
+2025-05-30 18:28:05,546 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  61%|████████████████████████████▏                 | 2.01G/3.28G [01:27<00:53, 23.6MB/s]
+2025-05-30 18:28:05,990 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  62%|████████████████████████████▎                 | 2.02G/3.28G [01:28<00:53, 23.6MB/s]
+2025-05-30 18:28:06,434 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  62%|████████████████████████████▌                 | 2.03G/3.28G [01:28<00:52, 23.6MB/s]
+2025-05-30 18:28:06,877 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  62%|████████████████████████████▋                 | 2.04G/3.28G [01:29<00:52, 23.6MB/s]
+2025-05-30 18:28:07,322 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  63%|████████████████████████████▊                 | 2.06G/3.28G [01:29<00:51, 23.6MB/s]
+2025-05-30 18:28:07,743 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  63%|████████████████████████████▉                 | 2.07G/3.28G [01:30<00:50, 24.0MB/s]
+2025-05-30 18:28:08,022 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  63%|█████████████████████████████                 | 2.08G/3.28G [01:30<00:44, 26.9MB/s]
+2025-05-30 18:28:08,222 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  64%|█████████████████████████████▏                | 2.09G/3.28G [01:30<00:37, 31.5MB/s]
+2025-05-30 18:28:08,376 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  64%|█████████████████████████████▍                | 2.10G/3.28G [01:30<00:31, 37.6MB/s]
+2025-05-30 18:28:08,798 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  64%|█████████████████████████████▌                | 2.11G/3.28G [01:31<00:36, 32.6MB/s]
+2025-05-30 18:28:09,070 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|█████████████████████████████▋                | 2.12G/3.28G [01:31<00:34, 34.1MB/s]
+2025-05-30 18:28:09,865 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|█████████████████████████████▊                | 2.13G/3.28G [01:32<00:49, 23.1MB/s]
+2025-05-30 18:28:09,978 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|█████████████████████████████▉                | 2.14G/3.28G [01:32<00:38, 29.8MB/s]
+2025-05-30 18:28:10,532 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|██████████████████████████████▏               | 2.15G/3.28G [01:32<00:44, 25.4MB/s]
+2025-05-30 18:28:11,549 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  66%|██████████████████████████████▎               | 2.16G/3.28G [01:33<01:03, 17.7MB/s]
+2025-05-30 18:28:13,824 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  66%|██████████████████████████████▍               | 2.17G/3.28G [01:36<01:56, 9.55MB/s]
+2025-05-30 18:28:14,384 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  66%|██████████████████████████████▌               | 2.18G/3.28G [01:36<01:38, 11.2MB/s]
+2025-05-30 18:28:14,690 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  67%|██████████████████████████████▋               | 2.19G/3.28G [01:37<01:17, 14.0MB/s]
+2025-05-30 18:28:14,902 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  67%|██████████████████████████████▊               | 2.20G/3.28G [01:37<01:00, 17.9MB/s]
+2025-05-30 18:28:15,065 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  67%|███████████████████████████████               | 2.21G/3.28G [01:37<00:46, 22.8MB/s]
+2025-05-30 18:28:15,540 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  68%|███████████████████████████████▏              | 2.22G/3.28G [01:37<00:46, 22.6MB/s]
+2025-05-30 18:28:15,803 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  68%|███████████████████████████████▎              | 2.23G/3.28G [01:38<00:40, 26.0MB/s]
+2025-05-30 18:28:16,292 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  68%|███████████████████████████████▍              | 2.24G/3.28G [01:38<00:42, 24.4MB/s]
+2025-05-30 18:28:16,468 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  69%|███████████████████████████████▌              | 2.25G/3.28G [01:38<00:34, 29.7MB/s]
+2025-05-30 18:28:17,137 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  69%|███████████████████████████████▋              | 2.26G/3.28G [01:39<00:43, 23.4MB/s]
+2025-05-30 18:28:17,629 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  69%|███████████████████████████████▉              | 2.28G/3.28G [01:40<00:44, 22.7MB/s]
+2025-05-30 18:28:18,224 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  70%|████████████████████████████████              | 2.29G/3.28G [01:40<00:47, 20.9MB/s]
+2025-05-30 18:28:18,438 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  70%|████████████████████████████████▏             | 2.30G/3.28G [01:40<00:39, 25.3MB/s]
+2025-05-30 18:28:18,630 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  70%|████████████████████████████████▎             | 2.31G/3.28G [01:41<00:32, 30.1MB/s]
+2025-05-30 18:28:18,782 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  71%|████████████████████████████████▍             | 2.32G/3.28G [01:41<00:26, 36.2MB/s]
+2025-05-30 18:28:19,305 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  71%|████████████████████████████████▋             | 2.33G/3.28G [01:41<00:32, 29.2MB/s]
+2025-05-30 18:28:19,758 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  71%|████████████████████████████████▊             | 2.34G/3.28G [01:42<00:34, 27.1MB/s]
+2025-05-30 18:28:20,287 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  72%|████████████████████████████████▉             | 2.35G/3.28G [01:42<00:38, 24.4MB/s]
+2025-05-30 18:28:23,814 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  72%|█████████████████████████████████             | 2.36G/3.28G [01:46<01:59, 7.72MB/s]
+2025-05-30 18:28:26,076 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  72%|█████████████████████████████████▏            | 2.37G/3.28G [01:48<02:21, 6.43MB/s]
+2025-05-30 18:28:26,737 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▎            | 2.38G/3.28G [01:49<01:55, 7.83MB/s]
+2025-05-30 18:28:27,322 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▌            | 2.39G/3.28G [01:49<01:34, 9.42MB/s]
+2025-05-30 18:28:27,781 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▋            | 2.40G/3.28G [01:50<01:17, 11.4MB/s]
+2025-05-30 18:28:28,103 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▊            | 2.41G/3.28G [01:50<01:01, 14.2MB/s]
+2025-05-30 18:28:28,746 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  74%|█████████████████████████████████▉            | 2.42G/3.28G [01:51<00:58, 14.8MB/s]
+2025-05-30 18:28:29,002 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  74%|██████████████████████████████████            | 2.43G/3.28G [01:51<00:46, 18.3MB/s]
+2025-05-30 18:28:29,234 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  74%|██████████████████████████████████▏           | 2.44G/3.28G [01:51<00:37, 22.3MB/s]
+2025-05-30 18:28:29,414 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  75%|██████████████████████████████████▍           | 2.45G/3.28G [01:51<00:30, 27.3MB/s]
+2025-05-30 18:28:29,967 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  75%|██████████████████████████████████▌           | 2.46G/3.28G [01:52<00:33, 24.1MB/s]
+2025-05-30 18:28:30,469 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  75%|██████████████████████████████████▋           | 2.47G/3.28G [01:52<00:35, 23.0MB/s]
+2025-05-30 18:28:30,861 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  76%|██████████████████████████████████▊           | 2.49G/3.28G [01:53<00:33, 24.1MB/s]
+2025-05-30 18:28:31,230 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  76%|██████████████████████████████████▉           | 2.50G/3.28G [01:53<00:31, 25.2MB/s]
+2025-05-30 18:28:31,774 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  76%|███████████████████████████████████           | 2.51G/3.28G [01:54<00:33, 23.1MB/s]
+2025-05-30 18:28:31,982 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  77%|███████████████████████████████████▎          | 2.52G/3.28G [01:54<00:27, 27.6MB/s]
+2025-05-30 18:28:32,558 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  77%|███████████████████████████████████▍          | 2.53G/3.28G [01:54<00:31, 23.9MB/s]
+2025-05-30 18:28:33,027 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  77%|███████████████████████████████████▌          | 2.54G/3.28G [01:55<00:31, 23.4MB/s]
+2025-05-30 18:28:33,446 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  78%|███████████████████████████████████▋          | 2.55G/3.28G [01:55<00:30, 23.9MB/s]
+2025-05-30 18:28:33,856 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  78%|███████████████████████████████████▊          | 2.56G/3.28G [01:56<00:29, 24.3MB/s]
+2025-05-30 18:28:34,266 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  78%|████████████████████████████████████          | 2.57G/3.28G [01:56<00:28, 24.7MB/s]
+2025-05-30 18:28:34,676 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  79%|████████████████████████████████████▏         | 2.58G/3.28G [01:57<00:28, 25.0MB/s]
+2025-05-30 18:28:35,086 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  79%|████████████████████████████████████▎         | 2.59G/3.28G [01:57<00:27, 25.2MB/s]
+2025-05-30 18:28:35,497 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  79%|████████████████████████████████████▍         | 2.60G/3.28G [01:57<00:26, 25.3MB/s]
+2025-05-30 18:28:35,907 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  80%|████████████████████████████████████▌         | 2.61G/3.28G [01:58<00:26, 25.4MB/s]
+2025-05-30 18:28:36,316 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  80%|████████████████████████████████████▋         | 2.62G/3.28G [01:58<00:25, 25.5MB/s]
+2025-05-30 18:28:36,726 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  80%|████████████████████████████████████▉         | 2.63G/3.28G [01:59<00:25, 25.5MB/s]
+2025-05-30 18:28:37,135 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████         | 2.64G/3.28G [01:59<00:25, 25.5MB/s]
+2025-05-30 18:28:37,546 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████▏        | 2.65G/3.28G [01:59<00:24, 25.5MB/s]
+2025-05-30 18:28:37,955 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████▎        | 2.66G/3.28G [02:00<00:24, 25.5MB/s]
+2025-05-30 18:28:38,328 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████▍        | 2.67G/3.28G [02:00<00:23, 26.3MB/s]
+2025-05-30 18:28:38,659 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  82%|█████████████████████████████████████▌        | 2.68G/3.28G [02:01<00:21, 27.7MB/s]
+2025-05-30 18:28:38,956 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  82%|█████████████████████████████████████▊        | 2.69G/3.28G [02:01<00:19, 29.6MB/s]
+2025-05-30 18:28:39,166 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  82%|█████████████████████████████████████▉        | 2.71G/3.28G [02:01<00:17, 33.8MB/s]
+2025-05-30 18:28:39,327 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  83%|██████████████████████████████████████        | 2.72G/3.28G [02:01<00:14, 39.4MB/s]
+2025-05-30 18:28:39,749 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  83%|██████████████████████████████████████▏       | 2.73G/3.28G [02:02<00:16, 33.5MB/s]
+2025-05-30 18:28:39,999 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  83%|██████████████████████████████████████▎       | 2.74G/3.28G [02:02<00:15, 35.7MB/s]
+2025-05-30 18:28:40,648 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  84%|██████████████████████████████████████▌       | 2.75G/3.28G [02:03<00:20, 26.2MB/s]
+2025-05-30 18:28:40,935 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  84%|██████████████████████████████████████▋       | 2.76G/3.28G [02:03<00:18, 28.6MB/s]
+2025-05-30 18:28:41,464 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  84%|██████████████████████████████████████▊       | 2.77G/3.28G [02:03<00:20, 25.2MB/s]
+2025-05-30 18:28:41,637 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  85%|██████████████████████████████████████▉       | 2.78G/3.28G [02:04<00:16, 30.6MB/s]
+2025-05-30 18:28:42,182 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  85%|███████████████████████████████████████       | 2.79G/3.28G [02:04<00:18, 26.0MB/s]
+2025-05-30 18:28:42,621 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  85%|███████████████████████████████████████▏      | 2.80G/3.28G [02:05<00:19, 25.3MB/s]
+2025-05-30 18:28:42,899 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  86%|███████████████████████████████████████▍      | 2.81G/3.28G [02:05<00:16, 28.1MB/s]
+2025-05-30 18:28:43,629 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  86%|███████████████████████████████████████▌      | 2.82G/3.28G [02:06<00:21, 21.8MB/s]
+2025-05-30 18:28:43,868 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  86%|███████████████████████████████████████▋      | 2.83G/3.28G [02:06<00:17, 25.7MB/s]
+2025-05-30 18:28:44,391 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  87%|███████████████████████████████████████▊      | 2.84G/3.28G [02:06<00:18, 23.7MB/s]
+2025-05-30 18:28:44,861 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  87%|███████████████████████████████████████▉      | 2.85G/3.28G [02:07<00:18, 23.3MB/s]
+2025-05-30 18:28:45,378 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  87%|████████████████████████████████████████      | 2.86G/3.28G [02:07<00:18, 22.3MB/s]
+2025-05-30 18:28:45,579 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▎     | 2.87G/3.28G [02:07<00:15, 26.9MB/s]
+2025-05-30 18:28:46,140 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▍     | 2.88G/3.28G [02:08<00:16, 23.8MB/s]
+2025-05-30 18:28:46,595 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▌     | 2.89G/3.28G [02:08<00:16, 23.5MB/s]
+2025-05-30 18:28:47,049 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▋     | 2.90G/3.28G [02:09<00:16, 23.4MB/s]
+2025-05-30 18:28:47,562 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  89%|████████████████████████████████████████▊     | 2.92G/3.28G [02:09<00:16, 22.4MB/s]
+2025-05-30 18:28:48,025 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  89%|█████████████████████████████████████████     | 2.93G/3.28G [02:10<00:15, 22.5MB/s]
+2025-05-30 18:28:48,479 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  89%|█████████████████████████████████████████▏    | 2.94G/3.28G [02:10<00:15, 22.7MB/s]
+2025-05-30 18:28:49,219 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  90%|█████████████████████████████████████████▎    | 2.95G/3.28G [02:11<00:17, 19.2MB/s]
+2025-05-30 18:28:49,431 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  90%|█████████████████████████████████████████▍    | 2.96G/3.28G [02:11<00:13, 23.5MB/s]
+2025-05-30 18:28:49,642 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  90%|█████████████████████████████████████████▌    | 2.97G/3.28G [02:12<00:11, 27.9MB/s]
+2025-05-30 18:28:49,808 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  91%|█████████████████████████████████████████▋    | 2.98G/3.28G [02:12<00:09, 33.6MB/s]
+2025-05-30 18:28:50,310 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  91%|█████████████████████████████████████████▉    | 2.99G/3.28G [02:12<00:10, 28.4MB/s]
+2025-05-30 18:28:50,497 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  91%|██████████████████████████████████████████    | 3.00G/3.28G [02:12<00:08, 33.3MB/s]
+2025-05-30 18:28:51,284 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  92%|██████████████████████████████████████████▏   | 3.01G/3.28G [02:13<00:11, 23.0MB/s]
+2025-05-30 18:28:51,457 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  92%|██████████████████████████████████████████▎   | 3.02G/3.28G [02:13<00:09, 28.2MB/s]
+2025-05-30 18:28:52,000 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  92%|██████████████████████████████████████████▍   | 3.03G/3.28G [02:14<00:10, 24.8MB/s]
+2025-05-30 18:28:52,403 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  93%|██████████████████████████████████████████▌   | 3.04G/3.28G [02:14<00:09, 25.2MB/s]
+2025-05-30 18:28:52,862 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  93%|██████████████████████████████████████████▊   | 3.05G/3.28G [02:15<00:09, 24.4MB/s]
+2025-05-30 18:28:53,381 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  93%|██████████████████████████████████████████▉   | 3.06G/3.28G [02:15<00:09, 23.0MB/s]
+2025-05-30 18:28:53,952 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  94%|███████████████████████████████████████████   | 3.07G/3.28G [02:16<00:09, 21.4MB/s]
+2025-05-30 18:28:54,501 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  94%|███████████████████████████████████████████▏  | 3.08G/3.28G [02:16<00:09, 20.6MB/s]
+2025-05-30 18:28:54,703 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  94%|███████████████████████████████████████████▎  | 3.09G/3.28G [02:17<00:07, 25.2MB/s]
+2025-05-30 18:28:55,255 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  95%|███████████████████████████████████████████▌  | 3.10G/3.28G [02:17<00:07, 22.9MB/s]
+2025-05-30 18:28:55,456 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  95%|███████████████████████████████████████████▋  | 3.11G/3.28G [02:17<00:06, 27.6MB/s]
+2025-05-30 18:28:56,150 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  95%|███████████████████████████████████████████▊  | 3.12G/3.28G [02:18<00:07, 22.1MB/s]
+2025-05-30 18:28:56,588 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|███████████████████████████████████████████▉  | 3.14G/3.28G [02:18<00:06, 22.6MB/s]
+2025-05-30 18:28:57,027 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|████████████████████████████████████████████  | 3.15G/3.28G [02:19<00:05, 23.0MB/s]
+2025-05-30 18:28:57,462 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|████████████████████████████████████████████▏ | 3.16G/3.28G [02:19<00:05, 23.3MB/s]
+2025-05-30 18:28:57,901 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|████████████████████████████████████████████▍ | 3.17G/3.28G [02:20<00:04, 23.5MB/s]
+2025-05-30 18:28:58,338 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  97%|████████████████████████████████████████████▌ | 3.18G/3.28G [02:20<00:04, 23.6MB/s]
+2025-05-30 18:28:58,775 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  97%|████████████████████████████████████████████▋ | 3.19G/3.28G [02:21<00:03, 23.7MB/s]
+2025-05-30 18:28:59,212 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  97%|████████████████████████████████████████████▊ | 3.20G/3.28G [02:21<00:03, 23.8MB/s]
+2025-05-30 18:28:59,650 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  98%|████████████████████████████████████████████▉ | 3.21G/3.28G [02:22<00:03, 23.9MB/s]
+2025-05-30 18:29:00,087 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  98%|█████████████████████████████████████████████ | 3.22G/3.28G [02:22<00:02, 23.9MB/s]
+2025-05-30 18:29:00,524 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  98%|█████████████████████████████████████████████▎| 3.23G/3.28G [02:22<00:02, 23.9MB/s]
+2025-05-30 18:29:00,958 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  99%|█████████████████████████████████████████████▍| 3.24G/3.28G [02:23<00:01, 24.0MB/s]
+2025-05-30 18:29:01,262 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  99%|█████████████████████████████████████████████▌| 3.25G/3.28G [02:23<00:01, 26.4MB/s]
+2025-05-30 18:29:01,473 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  99%|█████████████████████████████████████████████▋| 3.26G/3.28G [02:23<00:00, 30.7MB/s]
+2025-05-30 18:29:01,636 - tsu_nlp.model.logger.write - ERROR - model.safetensors: 100%|█████████████████████████████████████████████▊| 3.27G/3.28G [02:24<00:00, 36.4MB/s]
+2025-05-30 18:29:01,767 - tsu_nlp.model.logger.write - ERROR - model.safetensors: 100%|█████████████████████████████████████████████▉| 3.28G/3.28G [02:24<00:00, 43.5MB/s]
+2025-05-30 18:29:01,770 - tsu_nlp.model.logger.write - ERROR - model.safetensors: 100%|██████████████████████████████████████████████| 3.28G/3.28G [02:24<00:00, 22.8MB/s]
+2025-05-30 18:29:02,332 - tsu_nlp.model.logger.write - ERROR - generation_config.json:   0%|                                                                                         | 0.00/163 [00:00<?, ?B/s]
+2025-05-30 18:29:02,332 - tsu_nlp.model.logger.write - ERROR - generation_config.json: 100%|███████████████████████████████████████████████████████████████████████████████████| 163/163 [00:00<00:00, 319kB/s]
+2025-05-30 18:29:02,546 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:29:02,546 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:29:02,547 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                 | 0/30934 [00:00<?, ?it/s]
+2025-05-30 18:30:34,510 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 1/30934 [01:31<790:11:26, 91.96s/it]
+2025-05-30 18:32:10,064 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 2/30934 [03:07<808:18:53, 94.08s/it]
+2025-05-30 18:33:18,624 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:33:18,624 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:33:19,156 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:33:20,842 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:33:20,842 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:33:20,845 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                 | 0/30934 [00:00<?, ?it/s]
+2025-05-30 18:34:52,333 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 1/30934 [01:31<786:06:20, 91.49s/it]
+2025-05-30 18:36:23,647 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 2/30934 [03:02<785:12:26, 91.39s/it]
+2025-05-30 18:37:54,821 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 3/30934 [04:33<784:20:59, 91.29s/it]
+2025-05-30 18:39:26,255 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 4/30934 [06:05<784:49:02, 91.35s/it]
+2025-05-30 18:40:56,583 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 5/30934 [07:35<781:38:06, 90.98s/it]
+2025-05-30 18:42:27,108 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 6/30934 [09:06<780:17:09, 90.82s/it]
+2025-05-30 18:43:57,609 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 7/30934 [10:36<779:21:04, 90.72s/it]
+2025-05-30 18:45:27,805 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 8/30934 [12:06<777:53:42, 90.55s/it]
+2025-05-30 18:46:39,937 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:46:39,937 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:46:40,454 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 18:46:40,455 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:46:40,455 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 18:46:41,181 - tsu_nlp.model.logger.write - ERROR - tokenizer_config.json:   0%|                                                   | 0.00/20.3k [00:00<?, ?B/s]
+2025-05-30 18:46:41,183 - tsu_nlp.model.logger.write - ERROR - tokenizer_config.json: 100%|██████████████████████████████████████████| 20.3k/20.3k [00:00<00:00, 10.3MB/s]
+2025-05-30 18:46:41,220 - tsu_nlp.model.logger.write - ERROR - C:\Users\Xee\AppData\Local\pypoetry\Cache\virtualenvs\tsu-nlp-FP3zCz-t-py3.12\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in E:\dev\TSU.NLP\models_cache\models--saarus72--russian_text_normalizer. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+2025-05-30 18:46:41,866 - tsu_nlp.model.logger.write - ERROR - vocab.json:   0%|                                                              | 0.00/1.81M [00:00<?, ?B/s]
+2025-05-30 18:46:42,389 - tsu_nlp.model.logger.write - ERROR - vocab.json: 100%|█████████████████████████████████████████████████████| 1.81M/1.81M [00:00<00:00, 3.47MB/s]
+2025-05-30 18:46:42,390 - tsu_nlp.model.logger.write - ERROR - vocab.json: 100%|█████████████████████████████████████████████████████| 1.81M/1.81M [00:00<00:00, 3.46MB/s]
+2025-05-30 18:46:42,828 - tsu_nlp.model.logger.write - ERROR - merges.txt:   0%|                                                              | 0.00/1.27M [00:00<?, ?B/s]
+2025-05-30 18:46:43,162 - tsu_nlp.model.logger.write - ERROR - merges.txt: 100%|█████████████████████████████████████████████████████| 1.27M/1.27M [00:00<00:00, 3.82MB/s]
+2025-05-30 18:46:43,163 - tsu_nlp.model.logger.write - ERROR - merges.txt: 100%|█████████████████████████████████████████████████████| 1.27M/1.27M [00:00<00:00, 3.81MB/s]
+2025-05-30 18:46:43,557 - tsu_nlp.model.logger.write - ERROR - added_tokens.json:   0%|                                                       | 0.00/2.72k [00:00<?, ?B/s]
+2025-05-30 18:46:43,557 - tsu_nlp.model.logger.write - ERROR - added_tokens.json: 100%|██████████████████████████████████████████████████████| 2.72k/2.72k [00:00<?, ?B/s]
+2025-05-30 18:46:43,983 - tsu_nlp.model.logger.write - ERROR - special_tokens_map.json:   0%|                                                   | 0.00/688 [00:00<?, ?B/s]
+2025-05-30 18:46:43,984 - tsu_nlp.model.logger.write - ERROR - special_tokens_map.json: 100%|████████████████████████████████████████████████████| 688/688 [00:00<?, ?B/s]
+2025-05-30 18:46:44,851 - tsu_nlp.model.logger.write - ERROR - config.json:   0%|                                                               | 0.00/857 [00:00<?, ?B/s]
+2025-05-30 18:46:44,851 - tsu_nlp.model.logger.write - ERROR - config.json: 100%|████████████████████████████████████████████████████████████████| 857/857 [00:00<?, ?B/s]
+2025-05-30 18:46:45,837 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   0%|                                                       | 0.00/3.28G [00:00<?, ?B/s]
+2025-05-30 18:46:46,793 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   0%|▏                                             | 10.5M/3.28G [00:00<04:58, 11.0MB/s]
+2025-05-30 18:46:47,427 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   1%|▎                                             | 21.0M/3.28G [00:01<03:58, 13.7MB/s]
+2025-05-30 18:46:47,826 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   1%|▍                                             | 31.5M/3.28G [00:01<03:05, 17.5MB/s]
+2025-05-30 18:46:48,360 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   1%|▌                                             | 41.9M/3.28G [00:02<02:57, 18.3MB/s]
+2025-05-30 18:46:48,929 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   2%|▋                                             | 52.4M/3.28G [00:03<02:56, 18.3MB/s]
+2025-05-30 18:46:49,348 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   2%|▉                                             | 62.9M/3.28G [00:03<02:39, 20.2MB/s]
+2025-05-30 18:46:49,489 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   2%|█                                             | 73.4M/3.28G [00:03<02:01, 26.5MB/s]
+2025-05-30 18:46:49,770 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   3%|█▏                                            | 83.9M/3.28G [00:03<01:49, 29.2MB/s]
+2025-05-30 18:46:50,182 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   3%|█▎                                            | 94.4M/3.28G [00:04<01:54, 27.9MB/s]
+2025-05-30 18:46:50,601 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   3%|█▌                                             | 105M/3.28G [00:04<01:57, 26.9MB/s]
+2025-05-30 18:46:50,800 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|█▋                                             | 115M/3.28G [00:04<01:39, 31.7MB/s]
+2025-05-30 18:46:51,258 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|█▊                                             | 126M/3.28G [00:05<01:51, 28.4MB/s]
+2025-05-30 18:46:51,616 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|█▉                                             | 136M/3.28G [00:05<01:49, 28.6MB/s]
+2025-05-30 18:46:52,055 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   4%|██                                             | 147M/3.28G [00:06<01:56, 27.0MB/s]
+2025-05-30 18:46:52,459 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   5%|██▎                                            | 157M/3.28G [00:06<01:57, 26.7MB/s]
+2025-05-30 18:46:52,887 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   5%|██▍                                            | 168M/3.28G [00:07<01:59, 26.0MB/s]
+2025-05-30 18:46:53,610 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   5%|██▌                                            | 178M/3.28G [00:07<02:27, 21.0MB/s]
+2025-05-30 18:46:54,159 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   6%|██▋                                            | 189M/3.28G [00:08<02:31, 20.4MB/s]
+2025-05-30 18:46:55,128 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   6%|██▊                                            | 199M/3.28G [00:09<03:11, 16.1MB/s]
+2025-05-30 18:46:55,385 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   6%|███                                            | 210M/3.28G [00:09<02:36, 19.7MB/s]
+2025-05-30 18:46:55,754 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   7%|███▏                                           | 220M/3.28G [00:09<02:21, 21.7MB/s]
+2025-05-30 18:46:56,189 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   7%|███▎                                           | 231M/3.28G [00:10<02:16, 22.4MB/s]
+2025-05-30 18:46:56,333 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   7%|███▍                                           | 241M/3.28G [00:10<01:47, 28.2MB/s]
+2025-05-30 18:46:57,418 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   8%|███▌                                           | 252M/3.28G [00:11<02:49, 17.9MB/s]
+2025-05-30 18:46:57,875 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   8%|███▊                                           | 262M/3.28G [00:12<02:37, 19.2MB/s]
+2025-05-30 18:46:58,349 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   8%|███▉                                           | 273M/3.28G [00:12<02:30, 20.0MB/s]
+2025-05-30 18:46:58,452 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   9%|████                                           | 283M/3.28G [00:12<01:53, 26.3MB/s]
+2025-05-30 18:46:59,137 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   9%|████▏                                          | 294M/3.28G [00:13<02:18, 21.6MB/s]
+2025-05-30 18:46:59,292 - tsu_nlp.model.logger.write - ERROR - model.safetensors:   9%|████▎                                          | 304M/3.28G [00:13<01:49, 27.2MB/s]
+2025-05-30 18:47:00,003 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  10%|████▌                                          | 315M/3.28G [00:14<02:16, 21.7MB/s]
+2025-05-30 18:47:00,588 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  10%|████▋                                          | 325M/3.28G [00:14<02:24, 20.4MB/s]
+2025-05-30 18:47:01,209 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  10%|████▊                                          | 336M/3.28G [00:15<02:33, 19.2MB/s]
+2025-05-30 18:47:01,637 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  11%|████▉                                          | 346M/3.28G [00:15<02:23, 20.5MB/s]
+2025-05-30 18:47:02,057 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  11%|█████                                          | 357M/3.28G [00:16<02:14, 21.7MB/s]
+2025-05-30 18:47:02,675 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  11%|█████▎                                         | 367M/3.28G [00:16<02:25, 20.0MB/s]
+2025-05-30 18:47:02,860 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▍                                         | 377M/3.28G [00:17<01:56, 24.8MB/s]
+2025-05-30 18:47:03,551 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▌                                         | 388M/3.28G [00:17<02:18, 20.9MB/s]
+2025-05-30 18:47:04,442 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▋                                         | 398M/3.28G [00:18<02:50, 16.9MB/s]
+2025-05-30 18:47:05,099 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  12%|█████▊                                         | 409M/3.28G [00:19<02:52, 16.6MB/s]
+2025-05-30 18:47:05,232 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  13%|██████                                         | 419M/3.28G [00:19<02:11, 21.8MB/s]
+2025-05-30 18:47:05,710 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  13%|██████▏                                        | 430M/3.28G [00:19<02:10, 21.8MB/s]
+2025-05-30 18:47:06,096 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  13%|██████▎                                        | 440M/3.28G [00:20<02:02, 23.2MB/s]
+2025-05-30 18:47:06,634 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  14%|██████▍                                        | 451M/3.28G [00:20<02:08, 22.0MB/s]
+2025-05-30 18:47:07,086 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  14%|██████▌                                        | 461M/3.28G [00:21<02:06, 22.3MB/s]
+2025-05-30 18:47:07,324 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  14%|██████▊                                        | 472M/3.28G [00:21<01:47, 26.2MB/s]
+2025-05-30 18:47:07,467 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  15%|██████▉                                        | 482M/3.28G [00:21<01:26, 32.5MB/s]
+2025-05-30 18:47:08,115 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  15%|███████                                        | 493M/3.28G [00:22<01:51, 24.9MB/s]
+2025-05-30 18:47:08,284 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  15%|███████▏                                       | 503M/3.28G [00:22<01:31, 30.4MB/s]
+2025-05-30 18:47:09,089 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  16%|███████▎                                       | 514M/3.28G [00:23<02:07, 21.7MB/s]
+2025-05-30 18:47:10,136 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  16%|███████▌                                       | 524M/3.28G [00:24<02:51, 16.1MB/s]
+2025-05-30 18:47:10,273 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  16%|███████▋                                       | 535M/3.28G [00:24<02:10, 21.1MB/s]
+2025-05-30 18:47:10,654 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  17%|███████▊                                       | 545M/3.28G [00:24<02:00, 22.7MB/s]
+2025-05-30 18:47:11,400 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  17%|███████▉                                       | 556M/3.28G [00:25<02:22, 19.1MB/s]
+2025-05-30 18:47:12,106 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  17%|████████                                       | 566M/3.28G [00:26<02:34, 17.6MB/s]
+2025-05-30 18:47:12,535 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  18%|████████▎                                      | 577M/3.28G [00:26<02:20, 19.2MB/s]
+2025-05-30 18:47:12,847 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  18%|████████▍                                      | 587M/3.28G [00:27<02:02, 22.1MB/s]
+2025-05-30 18:47:13,011 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  18%|████████▌                                      | 598M/3.28G [00:27<01:37, 27.4MB/s]
+2025-05-30 18:47:13,697 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|████████▋                                      | 608M/3.28G [00:27<02:00, 22.2MB/s]
+2025-05-30 18:47:14,270 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|████████▊                                      | 619M/3.28G [00:28<02:07, 20.8MB/s]
+2025-05-30 18:47:14,516 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|█████████                                      | 629M/3.28G [00:28<01:47, 24.6MB/s]
+2025-05-30 18:47:15,390 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  19%|█████████▏                                     | 640M/3.28G [00:29<02:21, 18.7MB/s]
+2025-05-30 18:47:16,391 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  20%|█████████▎                                     | 650M/3.28G [00:30<02:53, 15.1MB/s]
+2025-05-30 18:47:16,645 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  20%|█████████▍                                     | 661M/3.28G [00:30<02:20, 18.7MB/s]
+2025-05-30 18:47:16,795 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  20%|█████████▌                                     | 671M/3.28G [00:30<01:49, 24.0MB/s]
+2025-05-30 18:47:17,182 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  21%|█████████▊                                     | 682M/3.28G [00:31<01:44, 24.8MB/s]
+2025-05-30 18:47:17,596 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  21%|█████████▉                                     | 692M/3.28G [00:31<01:43, 25.0MB/s]
+2025-05-30 18:47:18,078 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  21%|██████████                                     | 703M/3.28G [00:32<01:47, 23.9MB/s]
+2025-05-30 18:47:18,561 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  22%|██████████▏                                    | 713M/3.28G [00:32<01:50, 23.2MB/s]
+2025-05-30 18:47:19,152 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  22%|██████████▎                                    | 724M/3.28G [00:33<02:00, 21.2MB/s]
+2025-05-30 18:47:19,554 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  22%|██████████▌                                    | 734M/3.28G [00:33<01:53, 22.5MB/s]
+2025-05-30 18:47:19,686 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  23%|██████████▋                                    | 744M/3.28G [00:33<01:28, 28.7MB/s]
+2025-05-30 18:47:20,330 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  23%|██████████▊                                    | 755M/3.28G [00:34<01:48, 23.3MB/s]
+2025-05-30 18:47:20,489 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  23%|██████████▉                                    | 765M/3.28G [00:34<01:26, 29.0MB/s]
+2025-05-30 18:47:21,186 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  24%|███████████                                    | 776M/3.28G [00:35<01:50, 22.7MB/s]
+2025-05-30 18:47:21,635 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  24%|███████████▎                                   | 786M/3.28G [00:35<01:49, 22.9MB/s]
+2025-05-30 18:47:22,026 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  24%|███████████▍                                   | 797M/3.28G [00:36<01:43, 23.9MB/s]
+2025-05-30 18:47:22,197 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  25%|███████████▌                                   | 807M/3.28G [00:36<01:24, 29.3MB/s]
+2025-05-30 18:47:22,948 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  25%|███████████▋                                   | 818M/3.28G [00:37<01:51, 22.0MB/s]
+2025-05-30 18:47:23,091 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  25%|███████████▊                                   | 828M/3.28G [00:37<01:28, 27.9MB/s]
+2025-05-30 18:47:23,726 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  26%|████████████                                   | 839M/3.28G [00:37<01:45, 23.1MB/s]
+2025-05-30 18:47:23,893 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  26%|████████████▏                                  | 849M/3.28G [00:38<01:25, 28.5MB/s]
+2025-05-30 18:47:24,104 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  26%|████████████▎                                  | 860M/3.28G [00:38<01:14, 32.7MB/s]
+2025-05-30 18:47:24,331 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▍                                  | 870M/3.28G [00:38<01:07, 35.8MB/s]
+2025-05-30 18:47:24,928 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▌                                  | 881M/3.28G [00:39<01:27, 27.3MB/s]
+2025-05-30 18:47:25,470 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▊                                  | 891M/3.28G [00:39<01:38, 24.3MB/s]
+2025-05-30 18:47:25,794 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  27%|████████████▉                                  | 902M/3.28G [00:39<01:30, 26.3MB/s]
+2025-05-30 18:47:26,176 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  28%|█████████████                                  | 912M/3.28G [00:40<01:29, 26.6MB/s]
+2025-05-30 18:47:26,594 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  28%|█████████████▏                                 | 923M/3.28G [00:40<01:30, 26.2MB/s]
+2025-05-30 18:47:27,101 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  28%|█████████████▎                                 | 933M/3.28G [00:41<01:36, 24.2MB/s]
+2025-05-30 18:47:27,367 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  29%|█████████████▌                                 | 944M/3.28G [00:41<01:25, 27.4MB/s]
+2025-05-30 18:47:28,002 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  29%|█████████████▋                                 | 954M/3.28G [00:42<01:41, 22.9MB/s]
+2025-05-30 18:47:28,510 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  29%|█████████████▊                                 | 965M/3.28G [00:42<01:44, 22.1MB/s]
+2025-05-30 18:47:29,026 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  30%|█████████████▉                                 | 975M/3.28G [00:43<01:46, 21.6MB/s]
+2025-05-30 18:47:29,671 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  30%|██████████████                                 | 986M/3.28G [00:43<01:56, 19.6MB/s]
+2025-05-30 18:47:29,849 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  30%|██████████████▎                                | 996M/3.28G [00:44<01:33, 24.6MB/s]
+2025-05-30 18:47:30,375 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  31%|██████████████                                | 1.01G/3.28G [00:44<01:39, 23.0MB/s]
+2025-05-30 18:47:30,639 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  31%|██████████████▎                               | 1.02G/3.28G [00:44<01:26, 26.3MB/s]
+2025-05-30 18:47:31,375 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  31%|██████████████▍                               | 1.03G/3.28G [00:45<01:47, 21.0MB/s]
+2025-05-30 18:47:31,832 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  32%|██████████████▌                               | 1.04G/3.28G [00:45<01:44, 21.5MB/s]
+2025-05-30 18:47:32,247 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  32%|██████████████▋                               | 1.05G/3.28G [00:46<01:39, 22.5MB/s]
+2025-05-30 18:47:32,873 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  32%|██████████████▊                               | 1.06G/3.28G [00:47<01:48, 20.4MB/s]
+2025-05-30 18:47:33,041 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  33%|██████████████▉                               | 1.07G/3.28G [00:47<01:26, 25.6MB/s]
+2025-05-30 18:47:33,503 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  33%|███████████████▏                              | 1.08G/3.28G [00:47<01:29, 24.6MB/s]
+2025-05-30 18:47:33,759 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  33%|███████████████▎                              | 1.09G/3.28G [00:47<01:18, 28.0MB/s]
+2025-05-30 18:47:34,410 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  34%|███████████████▍                              | 1.10G/3.28G [00:48<01:35, 22.9MB/s]
+2025-05-30 18:47:34,905 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  34%|███████████████▌                              | 1.11G/3.28G [00:49<01:37, 22.4MB/s]
+2025-05-30 18:47:35,558 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  34%|███████████████▋                              | 1.12G/3.28G [00:49<01:47, 20.0MB/s]
+2025-05-30 18:47:35,870 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|███████████████▊                              | 1.13G/3.28G [00:50<01:34, 22.8MB/s]
+2025-05-30 18:47:36,280 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|████████████████                              | 1.14G/3.28G [00:50<01:30, 23.6MB/s]
+2025-05-30 18:47:36,428 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|████████████████▏                             | 1.15G/3.28G [00:50<01:12, 29.5MB/s]
+2025-05-30 18:47:37,040 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  35%|████████████████▎                             | 1.16G/3.28G [00:51<01:27, 24.2MB/s]
+2025-05-30 18:47:37,379 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  36%|████████████████▍                             | 1.17G/3.28G [00:51<01:21, 25.9MB/s]
+2025-05-30 18:47:37,801 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  36%|████████████████▌                             | 1.18G/3.28G [00:51<01:21, 25.6MB/s]
+2025-05-30 18:47:38,292 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  36%|████████████████▊                             | 1.20G/3.28G [00:52<01:26, 24.1MB/s]
+2025-05-30 18:47:38,655 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  37%|████████████████▉                             | 1.21G/3.28G [00:52<01:21, 25.4MB/s]
+2025-05-30 18:47:38,770 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  37%|█████████████████                             | 1.22G/3.28G [00:52<01:03, 32.5MB/s]
+2025-05-30 18:47:39,793 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  37%|█████████████████▏                            | 1.23G/3.28G [00:53<01:44, 19.7MB/s]
+2025-05-30 18:47:40,265 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  38%|█████████████████▎                            | 1.24G/3.28G [00:54<01:40, 20.4MB/s]
+2025-05-30 18:47:40,721 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  38%|█████████████████▍                            | 1.25G/3.28G [00:54<01:36, 21.1MB/s]
+2025-05-30 18:47:41,168 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  38%|█████████████████▋                            | 1.26G/3.28G [00:55<01:33, 21.7MB/s]
+2025-05-30 18:47:41,641 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  39%|█████████████████▊                            | 1.27G/3.28G [00:55<01:32, 21.9MB/s]
+2025-05-30 18:47:42,091 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  39%|█████████████████▉                            | 1.28G/3.28G [00:56<01:29, 22.3MB/s]
+2025-05-30 18:47:42,724 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  39%|██████████████████                            | 1.29G/3.28G [00:56<01:38, 20.2MB/s]
+2025-05-30 18:47:43,269 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  40%|██████████████████▏                           | 1.30G/3.28G [00:57<01:39, 19.9MB/s]
+2025-05-30 18:47:43,804 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  40%|██████████████████▎                           | 1.31G/3.28G [00:57<01:39, 19.8MB/s]
+2025-05-30 18:47:44,322 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  41%|██████████████████▋                           | 1.33G/3.28G [00:58<01:15, 25.9MB/s]
+2025-05-30 18:47:45,145 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  41%|██████████████████▊                           | 1.34G/3.28G [00:59<01:34, 20.6MB/s]
+2025-05-30 18:47:45,604 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  41%|██████████████████▉                           | 1.35G/3.28G [00:59<01:31, 21.2MB/s]
+2025-05-30 18:47:46,112 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████                           | 1.36G/3.28G [01:00<01:31, 21.0MB/s]
+2025-05-30 18:47:46,596 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████▎                          | 1.37G/3.28G [01:00<01:30, 21.2MB/s]
+2025-05-30 18:47:47,062 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████▍                          | 1.38G/3.28G [01:01<01:28, 21.6MB/s]
+2025-05-30 18:47:47,567 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  42%|███████████████████▌                          | 1.39G/3.28G [01:01<01:28, 21.3MB/s]
+2025-05-30 18:47:48,114 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  43%|███████████████████▋                          | 1.41G/3.28G [01:02<01:30, 20.6MB/s]
+2025-05-30 18:47:48,357 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  43%|███████████████████▊                          | 1.42G/3.28G [01:02<01:16, 24.4MB/s]
+2025-05-30 18:47:48,755 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  43%|███████████████████▉                          | 1.43G/3.28G [01:02<01:14, 24.9MB/s]
+2025-05-30 18:47:49,262 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  44%|████████████████████▏                         | 1.44G/3.28G [01:03<01:18, 23.5MB/s]
+2025-05-30 18:47:50,090 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  44%|████████████████████▎                         | 1.45G/3.28G [01:04<01:38, 18.7MB/s]
+2025-05-30 18:47:51,078 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  44%|████████████████████▍                         | 1.46G/3.28G [01:05<01:59, 15.2MB/s]
+2025-05-30 18:47:51,521 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  45%|████████████████████▌                         | 1.47G/3.28G [01:05<01:46, 17.1MB/s]
+2025-05-30 18:47:51,860 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  45%|████████████████████▋                         | 1.48G/3.28G [01:06<01:31, 19.7MB/s]
+2025-05-30 18:47:52,474 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  45%|████████████████████▊                         | 1.49G/3.28G [01:06<01:35, 18.8MB/s]
+2025-05-30 18:47:52,639 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  46%|█████████████████████                         | 1.50G/3.28G [01:06<01:14, 23.9MB/s]
+2025-05-30 18:47:52,946 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  46%|█████████████████████▏                        | 1.51G/3.28G [01:07<01:07, 26.3MB/s]
+2025-05-30 18:47:53,378 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  46%|█████████████████████▎                        | 1.52G/3.28G [01:07<01:08, 25.6MB/s]
+2025-05-30 18:47:54,647 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  47%|█████████████████████▍                        | 1.53G/3.28G [01:08<01:51, 15.7MB/s]
+2025-05-30 18:47:54,873 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  47%|█████████████████████▌                        | 1.54G/3.28G [01:09<01:28, 19.6MB/s]
+2025-05-30 18:47:55,458 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  47%|█████████████████████▊                        | 1.55G/3.28G [01:09<01:30, 19.1MB/s]
+2025-05-30 18:47:56,010 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  48%|█████████████████████▉                        | 1.56G/3.28G [01:10<01:30, 19.0MB/s]
+2025-05-30 18:47:56,497 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  48%|██████████████████████                        | 1.57G/3.28G [01:10<01:26, 19.7MB/s]
+2025-05-30 18:47:56,745 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  48%|██████████████████████▏                       | 1.58G/3.28G [01:10<01:12, 23.5MB/s]
+2025-05-30 18:47:57,206 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  49%|██████████████████████▎                       | 1.59G/3.28G [01:11<01:12, 23.3MB/s]
+2025-05-30 18:47:57,415 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  49%|██████████████████████▍                       | 1.60G/3.28G [01:11<01:00, 27.7MB/s]
+2025-05-30 18:47:57,672 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  49%|██████████████████████▋                       | 1.61G/3.28G [01:11<00:54, 30.7MB/s]
+2025-05-30 18:47:58,311 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|██████████████████████▊                       | 1.63G/3.28G [01:12<01:08, 24.3MB/s]
+2025-05-30 18:47:58,443 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|██████████████████████▉                       | 1.64G/3.28G [01:12<00:53, 30.7MB/s]
+2025-05-30 18:47:59,074 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|███████████████████████                       | 1.65G/3.28G [01:13<01:06, 24.5MB/s]
+2025-05-30 18:47:59,222 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  50%|███████████████████████▏                      | 1.66G/3.28G [01:13<00:53, 30.5MB/s]
+2025-05-30 18:47:59,780 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  51%|███████████████████████▎                      | 1.67G/3.28G [01:13<01:02, 25.7MB/s]
+2025-05-30 18:48:00,589 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  51%|███████████████████████▌                      | 1.68G/3.28G [01:14<01:20, 19.8MB/s]
+2025-05-30 18:48:01,094 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  51%|███████████████████████▋                      | 1.69G/3.28G [01:15<01:19, 20.1MB/s]
+2025-05-30 18:48:01,427 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  52%|███████████████████████▊                      | 1.70G/3.28G [01:15<01:10, 22.6MB/s]
+2025-05-30 18:48:01,732 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  52%|███████████████████████▉                      | 1.71G/3.28G [01:15<01:02, 25.2MB/s]
+2025-05-30 18:48:01,901 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  52%|████████████████████████                      | 1.72G/3.28G [01:16<00:51, 30.6MB/s]
+2025-05-30 18:48:02,595 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  53%|████████████████████████▏                     | 1.73G/3.28G [01:16<01:06, 23.4MB/s]
+2025-05-30 18:48:02,725 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  53%|████████████████████████▍                     | 1.74G/3.28G [01:16<00:51, 29.8MB/s]
+2025-05-30 18:48:03,244 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  53%|████████████████████████▌                     | 1.75G/3.28G [01:17<00:58, 26.0MB/s]
+2025-05-30 18:48:03,463 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  54%|████████████████████████▋                     | 1.76G/3.28G [01:17<00:50, 30.2MB/s]
+2025-05-30 18:48:04,014 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  54%|████████████████████████▊                     | 1.77G/3.28G [01:18<00:58, 25.7MB/s]
+2025-05-30 18:48:04,357 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  54%|████████████████████████▉                     | 1.78G/3.28G [01:18<00:55, 27.0MB/s]
+2025-05-30 18:48:04,616 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  55%|█████████████████████████▏                    | 1.79G/3.28G [01:18<00:49, 30.0MB/s]
+2025-05-30 18:48:05,209 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  55%|█████████████████████████▎                    | 1.80G/3.28G [01:19<00:59, 24.8MB/s]
+2025-05-30 18:48:05,621 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  55%|█████████████████████████▍                    | 1.81G/3.28G [01:19<00:58, 25.0MB/s]
+2025-05-30 18:48:06,512 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  56%|█████████████████████████▌                    | 1.82G/3.28G [01:20<01:17, 18.7MB/s]
+2025-05-30 18:48:06,645 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  56%|█████████████████████████▋                    | 1.84G/3.28G [01:20<00:59, 24.2MB/s]
+2025-05-30 18:48:07,654 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  56%|█████████████████████████▊                    | 1.85G/3.28G [01:21<01:22, 17.3MB/s]
+2025-05-30 18:48:07,805 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  57%|██████████████████████████                    | 1.86G/3.28G [01:21<01:03, 22.3MB/s]
+2025-05-30 18:48:08,205 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  57%|██████████████████████████▏                   | 1.87G/3.28G [01:22<01:00, 23.4MB/s]
+2025-05-30 18:48:08,651 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  57%|██████████████████████████▎                   | 1.88G/3.28G [01:22<01:00, 23.4MB/s]
+2025-05-30 18:48:09,295 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▍                   | 1.89G/3.28G [01:23<01:07, 20.7MB/s]
+2025-05-30 18:48:09,908 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▌                   | 1.90G/3.28G [01:24<01:11, 19.5MB/s]
+2025-05-30 18:48:10,906 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  58%|██████████████████████████▉                   | 1.92G/3.28G [01:25<01:07, 20.2MB/s]
+2025-05-30 18:48:11,230 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  59%|███████████████████████████                   | 1.93G/3.28G [01:25<01:00, 22.2MB/s]
+2025-05-30 18:48:11,872 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  59%|███████████████████████████▏                  | 1.94G/3.28G [01:26<01:06, 20.3MB/s]
+2025-05-30 18:48:12,050 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  59%|███████████████████████████▎                  | 1.95G/3.28G [01:26<00:53, 24.7MB/s]
+2025-05-30 18:48:12,448 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  60%|███████████████████████████▍                  | 1.96G/3.28G [01:26<00:52, 25.1MB/s]
+2025-05-30 18:48:12,878 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  60%|███████████████████████████▋                  | 1.97G/3.28G [01:27<00:52, 24.9MB/s]
+2025-05-30 18:48:13,362 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  60%|███████████████████████████▊                  | 1.98G/3.28G [01:27<00:54, 23.9MB/s]
+2025-05-30 18:48:13,767 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  61%|███████████████████████████▉                  | 1.99G/3.28G [01:27<00:52, 24.5MB/s]
+2025-05-30 18:48:14,194 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  61%|████████████████████████████                  | 2.00G/3.28G [01:28<00:52, 24.5MB/s]
+2025-05-30 18:48:14,865 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  61%|████████████████████████████▏                 | 2.01G/3.28G [01:29<01:00, 21.0MB/s]
+2025-05-30 18:48:15,196 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  62%|████████████████████████████▎                 | 2.02G/3.28G [01:29<00:54, 23.3MB/s]
+2025-05-30 18:48:15,802 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  62%|████████████████████████████▌                 | 2.03G/3.28G [01:29<00:59, 21.1MB/s]
+2025-05-30 18:48:15,973 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  62%|████████████████████████████▋                 | 2.04G/3.28G [01:30<00:47, 26.3MB/s]
+2025-05-30 18:48:16,385 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  63%|████████████████████████████▊                 | 2.06G/3.28G [01:30<00:47, 26.0MB/s]
+2025-05-30 18:48:16,874 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  63%|████████████████████████████▉                 | 2.07G/3.28G [01:31<00:49, 24.4MB/s]
+2025-05-30 18:48:17,433 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  63%|█████████████████████████████                 | 2.08G/3.28G [01:31<00:53, 22.4MB/s]
+2025-05-30 18:48:17,678 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  64%|█████████████████████████████▏                | 2.09G/3.28G [01:31<00:45, 26.2MB/s]
+2025-05-30 18:48:18,048 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  64%|█████████████████████████████▍                | 2.10G/3.28G [01:32<00:44, 26.8MB/s]
+2025-05-30 18:48:18,470 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  64%|█████████████████████████████▌                | 2.11G/3.28G [01:32<00:44, 26.2MB/s]
+2025-05-30 18:48:18,594 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|█████████████████████████████▋                | 2.12G/3.28G [01:32<00:35, 33.0MB/s]
+2025-05-30 18:48:19,270 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|█████████████████████████████▊                | 2.13G/3.28G [01:33<00:46, 24.7MB/s]
+2025-05-30 18:48:19,789 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|█████████████████████████████▉                | 2.14G/3.28G [01:33<00:49, 23.1MB/s]
+2025-05-30 18:48:20,085 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  65%|██████████████████████████████▏               | 2.15G/3.28G [01:34<00:43, 25.8MB/s]
+2025-05-30 18:48:20,835 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  66%|██████████████████████████████▎               | 2.16G/3.28G [01:34<00:54, 20.6MB/s]
+2025-05-30 18:48:21,299 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  66%|██████████████████████████████▍               | 2.17G/3.28G [01:35<00:52, 21.2MB/s]
+2025-05-30 18:48:21,774 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  66%|██████████████████████████████▌               | 2.18G/3.28G [01:35<00:51, 21.4MB/s]
+2025-05-30 18:48:22,536 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  67%|██████████████████████████████▋               | 2.19G/3.28G [01:36<00:59, 18.4MB/s]
+2025-05-30 18:48:23,084 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  67%|██████████████████████████████▊               | 2.20G/3.28G [01:37<00:58, 18.6MB/s]
+2025-05-30 18:48:23,721 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  67%|███████████████████████████████               | 2.21G/3.28G [01:37<00:59, 17.9MB/s]
+2025-05-30 18:48:23,958 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  68%|███████████████████████████████▏              | 2.22G/3.28G [01:38<00:48, 21.8MB/s]
+2025-05-30 18:48:24,092 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  68%|███████████████████████████████▎              | 2.23G/3.28G [01:38<00:37, 27.8MB/s]
+2025-05-30 18:48:24,649 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  68%|███████████████████████████████▍              | 2.24G/3.28G [01:38<00:42, 24.3MB/s]
+2025-05-30 18:48:24,891 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  69%|███████████████████████████████▌              | 2.25G/3.28G [01:39<00:36, 28.0MB/s]
+2025-05-30 18:48:25,125 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  69%|███████████████████████████████▋              | 2.26G/3.28G [01:39<00:32, 31.6MB/s]
+2025-05-30 18:48:25,690 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  69%|███████████████████████████████▉              | 2.28G/3.28G [01:39<00:38, 26.1MB/s]
+2025-05-30 18:48:26,242 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  70%|████████████████████████████████              | 2.29G/3.28G [01:40<00:42, 23.4MB/s]
+2025-05-30 18:48:26,697 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  70%|████████████████████████████████▏             | 2.30G/3.28G [01:40<00:42, 23.3MB/s]
+2025-05-30 18:48:28,129 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  71%|████████████████████████████████▍             | 2.32G/3.28G [01:42<00:52, 18.3MB/s]
+2025-05-30 18:48:28,528 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  71%|████████████████████████████████▋             | 2.33G/3.28G [01:42<00:48, 19.8MB/s]
+2025-05-30 18:48:29,041 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  71%|████████████████████████████████▊             | 2.34G/3.28G [01:43<00:47, 20.0MB/s]
+2025-05-30 18:48:29,381 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  72%|████████████████████████████████▉             | 2.35G/3.28G [01:43<00:42, 22.1MB/s]
+2025-05-30 18:48:29,610 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  72%|█████████████████████████████████             | 2.36G/3.28G [01:43<00:35, 25.8MB/s]
+2025-05-30 18:48:30,160 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  72%|█████████████████████████████████▏            | 2.37G/3.28G [01:44<00:38, 23.5MB/s]
+2025-05-30 18:48:30,593 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▎            | 2.38G/3.28G [01:44<00:38, 23.7MB/s]
+2025-05-30 18:48:31,048 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▌            | 2.39G/3.28G [01:45<00:37, 23.5MB/s]
+2025-05-30 18:48:31,823 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▋            | 2.40G/3.28G [01:45<00:45, 19.3MB/s]
+2025-05-30 18:48:32,393 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  73%|█████████████████████████████████▊            | 2.41G/3.28G [01:46<00:45, 19.0MB/s]
+2025-05-30 18:48:32,821 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  74%|█████████████████████████████████▉            | 2.42G/3.28G [01:46<00:42, 20.4MB/s]
+2025-05-30 18:48:33,338 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  74%|██████████████████████████████████            | 2.43G/3.28G [01:47<00:41, 20.4MB/s]
+2025-05-30 18:48:33,662 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  74%|██████████████████████████████████▏           | 2.44G/3.28G [01:47<00:36, 22.9MB/s]
+2025-05-30 18:48:33,792 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  75%|██████████████████████████████████▍           | 2.45G/3.28G [01:47<00:28, 29.1MB/s]
+2025-05-30 18:48:34,239 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  75%|██████████████████████████████████▌           | 2.46G/3.28G [01:48<00:30, 27.2MB/s]
+2025-05-30 18:48:35,110 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  75%|██████████████████████████████████▋           | 2.47G/3.28G [01:49<00:40, 19.7MB/s]
+2025-05-30 18:48:35,485 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  76%|██████████████████████████████████▊           | 2.49G/3.28G [01:49<00:36, 21.7MB/s]
+2025-05-30 18:48:35,925 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  76%|██████████████████████████████████▉           | 2.50G/3.28G [01:50<00:35, 22.2MB/s]
+2025-05-30 18:48:36,367 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  76%|███████████████████████████████████           | 2.51G/3.28G [01:50<00:34, 22.7MB/s]
+2025-05-30 18:48:36,829 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  77%|███████████████████████████████████▎          | 2.52G/3.28G [01:50<00:33, 22.7MB/s]
+2025-05-30 18:48:37,889 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  77%|███████████████████████████████████▍          | 2.53G/3.28G [01:52<00:46, 16.3MB/s]
+2025-05-30 18:48:38,617 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  77%|███████████████████████████████████▌          | 2.54G/3.28G [01:52<00:47, 15.7MB/s]
+2025-05-30 18:48:38,959 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  78%|███████████████████████████████████▋          | 2.55G/3.28G [01:53<00:39, 18.4MB/s]
+2025-05-30 18:48:39,059 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  78%|███████████████████████████████████▊          | 2.56G/3.28G [01:53<00:29, 24.4MB/s]
+2025-05-30 18:48:39,534 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  78%|████████████████████████████████████          | 2.57G/3.28G [01:53<00:30, 23.7MB/s]
+2025-05-30 18:48:40,409 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  79%|████████████████████████████████████▏         | 2.58G/3.28G [01:54<00:38, 18.3MB/s]
+2025-05-30 18:48:40,512 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  79%|████████████████████████████████████▎         | 2.59G/3.28G [01:54<00:28, 24.3MB/s]
+2025-05-30 18:48:40,982 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  79%|████████████████████████████████████▍         | 2.60G/3.28G [01:55<00:28, 23.7MB/s]
+2025-05-30 18:48:41,858 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  80%|████████████████████████████████████▌         | 2.61G/3.28G [01:56<00:36, 18.3MB/s]
+2025-05-30 18:48:42,610 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  80%|████████████████████████████████████▋         | 2.62G/3.28G [01:56<00:39, 16.7MB/s]
+2025-05-30 18:48:42,724 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  80%|████████████████████████████████████▉         | 2.63G/3.28G [01:56<00:29, 22.2MB/s]
+2025-05-30 18:48:43,210 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████         | 2.64G/3.28G [01:57<00:29, 22.0MB/s]
+2025-05-30 18:48:43,542 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████▏        | 2.65G/3.28G [01:57<00:26, 24.2MB/s]
+2025-05-30 18:48:43,922 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████▎        | 2.66G/3.28G [01:58<00:24, 25.1MB/s]
+2025-05-30 18:48:44,802 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  81%|█████████████████████████████████████▍        | 2.67G/3.28G [01:58<00:32, 18.9MB/s]
+2025-05-30 18:48:45,308 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  82%|█████████████████████████████████████▌        | 2.68G/3.28G [01:59<00:30, 19.4MB/s]
+2025-05-30 18:48:45,627 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  82%|█████████████████████████████████████▊        | 2.69G/3.28G [01:59<00:26, 22.1MB/s]
+2025-05-30 18:48:46,198 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  82%|█████████████████████████████████████▉        | 2.71G/3.28G [02:00<00:27, 20.8MB/s]
+2025-05-30 18:48:46,458 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  83%|██████████████████████████████████████        | 2.72G/3.28G [02:00<00:23, 24.4MB/s]
+2025-05-30 18:48:46,803 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  83%|██████████████████████████████████████▏       | 2.73G/3.28G [02:00<00:21, 25.9MB/s]
+2025-05-30 18:48:47,375 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  83%|██████████████████████████████████████▎       | 2.74G/3.28G [02:01<00:23, 23.0MB/s]
+2025-05-30 18:48:47,615 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  84%|██████████████████████████████████████▌       | 2.75G/3.28G [02:01<00:19, 26.9MB/s]
+2025-05-30 18:48:47,737 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  84%|██████████████████████████████████████▋       | 2.76G/3.28G [02:01<00:15, 33.8MB/s]
+2025-05-30 18:48:48,297 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  84%|██████████████████████████████████████▊       | 2.77G/3.28G [02:02<00:18, 27.2MB/s]
+2025-05-30 18:48:48,847 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  85%|██████████████████████████████████████▉       | 2.78G/3.28G [02:03<00:20, 24.1MB/s]
+2025-05-30 18:48:49,161 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  85%|███████████████████████████████████████       | 2.79G/3.28G [02:03<00:18, 26.3MB/s]
+2025-05-30 18:48:49,394 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  85%|███████████████████████████████████████▏      | 2.80G/3.28G [02:03<00:16, 30.1MB/s]
+2025-05-30 18:48:49,828 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  86%|███████████████████████████████████████▍      | 2.81G/3.28G [02:03<00:16, 28.0MB/s]
+2025-05-30 18:48:50,229 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  86%|███████████████████████████████████████▌      | 2.82G/3.28G [02:04<00:16, 27.4MB/s]
+2025-05-30 18:48:51,696 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  86%|███████████████████████████████████████▋      | 2.83G/3.28G [02:05<00:30, 14.8MB/s]
+2025-05-30 18:48:52,069 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  87%|███████████████████████████████████████▊      | 2.84G/3.28G [02:06<00:25, 17.3MB/s]
+2025-05-30 18:48:52,301 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  87%|███████████████████████████████████████▉      | 2.85G/3.28G [02:06<00:20, 21.2MB/s]
+2025-05-30 18:48:52,867 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  87%|████████████████████████████████████████      | 2.86G/3.28G [02:07<00:20, 20.3MB/s]
+2025-05-30 18:48:53,054 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▎     | 2.87G/3.28G [02:07<00:16, 25.1MB/s]
+2025-05-30 18:48:53,644 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▍     | 2.88G/3.28G [02:07<00:17, 22.4MB/s]
+2025-05-30 18:48:54,017 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▌     | 2.89G/3.28G [02:08<00:16, 23.8MB/s]
+2025-05-30 18:48:54,210 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  88%|████████████████████████████████████████▋     | 2.90G/3.28G [02:08<00:13, 28.7MB/s]
+2025-05-30 18:48:54,685 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  89%|████████████████████████████████████████▊     | 2.92G/3.28G [02:08<00:13, 26.3MB/s]
+2025-05-30 18:48:54,911 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  89%|█████████████████████████████████████████     | 2.93G/3.28G [02:09<00:11, 30.2MB/s]
+2025-05-30 18:48:55,396 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  89%|█████████████████████████████████████████▏    | 2.94G/3.28G [02:09<00:12, 27.0MB/s]
+2025-05-30 18:48:55,946 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  90%|█████████████████████████████████████████▎    | 2.95G/3.28G [02:10<00:13, 24.0MB/s]
+2025-05-30 18:48:56,475 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  90%|█████████████████████████████████████████▍    | 2.96G/3.28G [02:10<00:14, 22.6MB/s]
+2025-05-30 18:48:56,949 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  91%|█████████████████████████████████████████▋    | 2.98G/3.28G [02:11<00:10, 29.2MB/s]
+2025-05-30 18:48:57,410 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  91%|█████████████████████████████████████████▉    | 2.99G/3.28G [02:11<00:10, 27.3MB/s]
+2025-05-30 18:48:57,865 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  91%|██████████████████████████████████████████    | 3.00G/3.28G [02:12<00:10, 26.0MB/s]
+2025-05-30 18:48:58,285 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  92%|██████████████████████████████████████████▏   | 3.01G/3.28G [02:12<00:10, 25.7MB/s]
+2025-05-30 18:48:58,595 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  92%|██████████████████████████████████████████▎   | 3.02G/3.28G [02:12<00:09, 27.6MB/s]
+2025-05-30 18:48:58,988 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  92%|██████████████████████████████████████████▍   | 3.03G/3.28G [02:13<00:09, 27.3MB/s]
+2025-05-30 18:48:59,483 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  93%|██████████████████████████████████████████▌   | 3.04G/3.28G [02:13<00:09, 25.2MB/s]
+2025-05-30 18:49:00,119 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  93%|██████████████████████████████████████████▊   | 3.05G/3.28G [02:14<00:10, 21.8MB/s]
+2025-05-30 18:49:00,856 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  94%|███████████████████████████████████████████   | 3.07G/3.28G [02:15<00:08, 24.4MB/s]
+2025-05-30 18:49:01,412 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  94%|███████████████████████████████████████████▏  | 3.08G/3.28G [02:15<00:08, 22.8MB/s]
+2025-05-30 18:49:01,641 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  94%|███████████████████████████████████████████▎  | 3.09G/3.28G [02:15<00:07, 26.2MB/s]
+2025-05-30 18:49:02,611 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  95%|███████████████████████████████████████████▌  | 3.10G/3.28G [02:16<00:09, 18.9MB/s]
+2025-05-30 18:49:02,945 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  95%|███████████████████████████████████████████▋  | 3.11G/3.28G [02:17<00:07, 21.3MB/s]
+2025-05-30 18:49:03,420 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  95%|███████████████████████████████████████████▊  | 3.12G/3.28G [02:17<00:07, 21.5MB/s]
+2025-05-30 18:49:03,752 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|███████████████████████████████████████████▉  | 3.14G/3.28G [02:17<00:06, 23.7MB/s]
+2025-05-30 18:49:03,890 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|████████████████████████████████████████████  | 3.15G/3.28G [02:18<00:04, 29.6MB/s]
+2025-05-30 18:49:04,525 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|████████████████████████████████████████████▏ | 3.16G/3.28G [02:18<00:05, 24.0MB/s]
+2025-05-30 18:49:04,965 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  96%|████████████████████████████████████████████▍ | 3.17G/3.28G [02:19<00:04, 24.0MB/s]
+2025-05-30 18:49:05,258 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  97%|████████████████████████████████████████████▌ | 3.18G/3.28G [02:19<00:03, 26.6MB/s]
+2025-05-30 18:49:05,702 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  97%|████████████████████████████████████████████▋ | 3.19G/3.28G [02:19<00:03, 25.6MB/s]
+2025-05-30 18:49:05,914 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  97%|████████████████████████████████████████████▊ | 3.20G/3.28G [02:20<00:02, 29.9MB/s]
+2025-05-30 18:49:06,103 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  98%|████████████████████████████████████████████▉ | 3.21G/3.28G [02:20<00:02, 34.7MB/s]
+2025-05-30 18:49:06,771 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  98%|█████████████████████████████████████████████ | 3.22G/3.28G [02:20<00:02, 25.5MB/s]
+2025-05-30 18:49:07,410 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  98%|█████████████████████████████████████████████▎| 3.23G/3.28G [02:21<00:02, 21.9MB/s]
+2025-05-30 18:49:07,785 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  99%|█████████████████████████████████████████████▍| 3.24G/3.28G [02:21<00:01, 23.4MB/s]
+2025-05-30 18:49:08,018 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  99%|█████████████████████████████████████████████▌| 3.25G/3.28G [02:22<00:01, 27.3MB/s]
+2025-05-30 18:49:08,874 - tsu_nlp.model.logger.write - ERROR - model.safetensors:  99%|█████████████████████████████████████████████▋| 3.26G/3.28G [02:23<00:01, 20.0MB/s]
+2025-05-30 18:49:09,262 - tsu_nlp.model.logger.write - ERROR - model.safetensors: 100%|█████████████████████████████████████████████▉| 3.28G/3.28G [02:23<00:00, 28.1MB/s]
+2025-05-30 18:49:09,265 - tsu_nlp.model.logger.write - ERROR - model.safetensors: 100%|██████████████████████████████████████████████| 3.28G/3.28G [02:23<00:00, 22.9MB/s]
+2025-05-30 18:49:09,815 - tsu_nlp.model.logger.write - ERROR - generation_config.json:   0%|                                                                                                                      | 0.00/163 [00:00<?, ?B/s]
+2025-05-30 18:49:09,815 - tsu_nlp.model.logger.write - ERROR - generation_config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 163/163 [00:00<?, ?B/s]
+2025-05-30 18:49:10,025 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:49:10,026 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:49:10,026 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                                                  | 0/5 [00:00<?, ?it/s]
+2025-05-30 18:49:33,380 - tsu_nlp.model.logger.write - ERROR - 20%|███████████████████████████▌                                                                                                              | 1/5 [00:23<01:33, 23.35s/it]
+2025-05-30 18:49:55,976 - tsu_nlp.model.logger.write - ERROR - 40%|███████████████████████████████████████████████████████▏                                                                                  | 2/5 [00:45<01:08, 22.91s/it]
+2025-05-30 18:50:18,633 - tsu_nlp.model.logger.write - ERROR - 60%|██████████████████████████████████████████████████████████████████████████████████▊                                                       | 3/5 [01:08<00:45, 22.79s/it]
+2025-05-30 18:50:41,902 - tsu_nlp.model.logger.write - ERROR - 80%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                           | 4/5 [01:31<00:22, 22.98s/it]
+2025-05-30 18:51:05,873 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:55<00:00, 23.34s/it]
+2025-05-30 18:51:05,873 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:55<00:00, 23.17s/it]
+2025-05-30 18:51:05,874 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 18:51:05,890 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 18:51:21,077 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:51:21,077 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:51:21,630 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:51:21,631 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 18:51:23,303 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:51:23,303 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:51:23,307 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                                 | 0/30934 [00:00<?, ?it/s]
+2025-05-30 18:52:57,395 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                     | 1/30934 [01:34<808:26:51, 94.09s/it]
+2025-05-30 18:54:32,842 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                     | 2/30934 [03:09<815:17:30, 94.89s/it]
+2025-05-30 18:56:05,731 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                                     | 3/30934 [04:42<807:25:23, 93.97s/it]
+2025-05-30 18:57:26,041 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:57:26,041 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:57:26,569 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 18:57:26,570 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:57:26,570 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 18:57:28,429 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:57:28,429 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:57:28,433 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/5 [00:00<?, ?it/s]
+2025-05-30 18:57:30,356 - tsu_nlp.model.logger.write - ERROR - 20%|██████████████████▊                                                                           | 1/5 [00:01<00:07,  1.92s/it]
+2025-05-30 18:57:31,642 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████▌                                                        | 2/5 [00:03<00:04,  1.55s/it]
+2025-05-30 18:57:32,890 - tsu_nlp.model.logger.write - ERROR - 60%|████████████████████████████████████████████████████████▍                                     | 3/5 [00:04<00:02,  1.41s/it]
+2025-05-30 18:57:34,634 - tsu_nlp.model.logger.write - ERROR - 80%|███████████████████████████████████████████████████████████████████████████▏                  | 4/5 [00:06<00:01,  1.54s/it]
+2025-05-30 18:57:36,629 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.71s/it]
+2025-05-30 18:57:36,629 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.64s/it]
+2025-05-30 18:57:36,630 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 18:57:36,631 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 18:58:17,805 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:58:17,806 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:58:18,362 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 18:58:18,362 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:58:18,363 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 18:58:20,019 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:58:20,019 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:58:20,023 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/5 [00:00<?, ?it/s]
+2025-05-30 18:58:21,827 - tsu_nlp.model.logger.write - ERROR - 20%|██████████████████▊                                                                           | 1/5 [00:01<00:07,  1.80s/it]
+2025-05-30 18:58:23,126 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████▌                                                        | 2/5 [00:03<00:04,  1.51s/it]
+2025-05-30 18:58:24,435 - tsu_nlp.model.logger.write - ERROR - 60%|████████████████████████████████████████████████████████▍                                     | 3/5 [00:04<00:02,  1.42s/it]
+2025-05-30 18:58:26,211 - tsu_nlp.model.logger.write - ERROR - 80%|███████████████████████████████████████████████████████████████████████████▏                  | 4/5 [00:06<00:01,  1.56s/it]
+2025-05-30 18:58:28,205 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.72s/it]
+2025-05-30 18:58:28,206 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.64s/it]
+2025-05-30 18:58:28,206 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 18:58:28,208 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 18:59:02,072 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 18:59:02,072 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 18:59:02,616 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 18:59:02,616 - tsu_nlp.model.logger.normalize_text - INFO - Примеры входных данных:
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_0, Before: Эта
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_1, Before: книга
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_2, Before: ,
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_3, Before: отличающаяся
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_4, Before: «
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_5, Before: напряженным
+2025-05-30 18:59:02,617 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_6, Before: сюжетом
+2025-05-30 18:59:02,618 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_7, Before: ,
+2025-05-30 18:59:02,618 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_8, Before: драматизмом
+2025-05-30 18:59:02,618 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_9, Before: ситуаций
+2025-05-30 18:59:02,618 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 18:59:02,618 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 18:59:04,425 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 18:59:04,425 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 18:59:04,429 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/5 [00:00<?, ?it/s]
+2025-05-30 18:59:06,346 - tsu_nlp.model.logger.write - ERROR - 20%|██████████████████▊                                                                           | 1/5 [00:01<00:07,  1.92s/it]
+2025-05-30 18:59:07,652 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████▌                                                        | 2/5 [00:03<00:04,  1.56s/it]
+2025-05-30 18:59:08,964 - tsu_nlp.model.logger.write - ERROR - 60%|████████████████████████████████████████████████████████▍                                     | 3/5 [00:04<00:02,  1.45s/it]
+2025-05-30 18:59:10,722 - tsu_nlp.model.logger.write - ERROR - 80%|███████████████████████████████████████████████████████████████████████████▏                  | 4/5 [00:06<00:01,  1.57s/it]
+2025-05-30 18:59:12,732 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.73s/it]
+2025-05-30 18:59:12,733 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.66s/it]
+2025-05-30 18:59:12,733 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 18:59:12,736 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:00:01,256 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:00:01,256 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:00:01,814 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 19:00:01,815 - tsu_nlp.model.logger.normalize_text - INFO - Примеры входных данных:
+2025-05-30 19:00:01,815 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_0, Before: Эта
+2025-05-30 19:00:01,815 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_1, Before: книга
+2025-05-30 19:00:01,815 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_2, Before: ,
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_3, Before: отличающаяся
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_4, Before: «
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_5, Before: напряженным
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_6, Before: сюжетом
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_7, Before: ,
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_8, Before: драматизмом
+2025-05-30 19:00:01,816 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_9, Before: ситуаций
+2025-05-30 19:00:01,817 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:00:01,817 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:00:03,431 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:00:03,431 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:00:03,436 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/5 [00:00<?, ?it/s]
+2025-05-30 19:00:26,133 - tsu_nlp.model.logger.write - ERROR - 20%|██████████████████▊                                                                           | 1/5 [00:22<01:30, 22.70s/it]
+2025-05-30 19:00:48,546 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████▌                                                        | 2/5 [00:45<01:07, 22.53s/it]
+2025-05-30 19:01:10,900 - tsu_nlp.model.logger.write - ERROR - 60%|████████████████████████████████████████████████████████▍                                     | 3/5 [01:07<00:44, 22.45s/it]
+2025-05-30 19:01:33,468 - tsu_nlp.model.logger.write - ERROR - 80%|███████████████████████████████████████████████████████████████████████████▏                  | 4/5 [01:30<00:22, 22.50s/it]
+2025-05-30 19:01:56,014 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:52<00:00, 22.51s/it]
+2025-05-30 19:01:56,015 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:52<00:00, 22.52s/it]
+2025-05-30 19:01:56,015 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 19:01:56,018 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:02:49,863 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:02:49,863 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:02:49,873 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 19:02:49,874 - tsu_nlp.model.logger.normalize_text - INFO - Примеры входных данных:
+2025-05-30 19:02:49,874 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_0, Before: В
+2025-05-30 19:02:49,874 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_1, Before: 2023
+2025-05-30 19:02:49,874 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_2, Before: году
+2025-05-30 19:02:49,875 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_3, Before: я
+2025-05-30 19:02:49,875 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_4, Before: купил
+2025-05-30 19:02:49,875 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_5, Before: iPhone
+2025-05-30 19:02:49,875 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_6, Before: 14
+2025-05-30 19:02:49,875 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_7, Before: за
+2025-05-30 19:02:49,876 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_8, Before: 89990
+2025-05-30 19:02:49,876 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_9, Before: рублей
+2025-05-30 19:02:49,876 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:02:49,876 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:02:51,569 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:02:51,569 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:02:51,573 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/5 [00:00<?, ?it/s]
+2025-05-30 19:03:14,466 - tsu_nlp.model.logger.write - ERROR - 20%|██████████████████▊                                                                           | 1/5 [00:22<01:31, 22.89s/it]
+2025-05-30 19:03:36,932 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████▌                                                        | 2/5 [00:45<01:07, 22.64s/it]
+2025-05-30 19:03:59,263 - tsu_nlp.model.logger.write - ERROR - 60%|████████████████████████████████████████████████████████▍                                     | 3/5 [01:07<00:44, 22.50s/it]
+2025-05-30 19:04:21,881 - tsu_nlp.model.logger.write - ERROR - 80%|███████████████████████████████████████████████████████████████████████████▏                  | 4/5 [01:30<00:22, 22.55s/it]
+2025-05-30 19:04:44,200 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:52<00:00, 22.46s/it]
+2025-05-30 19:04:44,201 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:52<00:00, 22.53s/it]
+2025-05-30 19:04:44,201 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 19:04:44,203 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:05:29,665 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:05:29,665 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:05:29,669 - tsu_nlp.model.logger.normalize_text - INFO - Запуск в тестовом режиме - обработка только первых 10 элементов
+2025-05-30 19:05:29,669 - tsu_nlp.model.logger.normalize_text - INFO - Примеры входных данных:
+2025-05-30 19:05:29,670 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_0, Before: В
+2025-05-30 19:05:29,670 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_1, Before: 2023
+2025-05-30 19:05:29,670 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_2, Before: году
+2025-05-30 19:05:29,670 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_3, Before: я
+2025-05-30 19:05:29,670 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_4, Before: купил
+2025-05-30 19:05:29,670 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_5, Before: iPhone
+2025-05-30 19:05:29,671 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_6, Before: 14
+2025-05-30 19:05:29,671 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_7, Before: за
+2025-05-30 19:05:29,671 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_8, Before: 89990
+2025-05-30 19:05:29,671 - tsu_nlp.model.logger.normalize_text - INFO - ID: 0_9, Before: рублей
+2025-05-30 19:05:29,671 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:05:29,672 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:05:31,610 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:05:31,610 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:05:31,613 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/5 [00:00<?, ?it/s]
+2025-05-30 19:05:54,428 - tsu_nlp.model.logger.write - ERROR - 20%|██████████████████▊                                                                           | 1/5 [00:22<01:31, 22.81s/it]
+2025-05-30 19:06:17,140 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████▌                                                        | 2/5 [00:45<01:08, 22.75s/it]
+2025-05-30 19:06:40,219 - tsu_nlp.model.logger.write - ERROR - 60%|████████████████████████████████████████████████████████▍                                     | 3/5 [01:08<00:45, 22.90s/it]
+2025-05-30 19:07:03,187 - tsu_nlp.model.logger.write - ERROR - 80%|███████████████████████████████████████████████████████████████████████████▏                  | 4/5 [01:31<00:22, 22.93s/it]
+2025-05-30 19:07:25,883 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:54<00:00, 22.84s/it]
+2025-05-30 19:07:25,883 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [01:54<00:00, 22.85s/it]
+2025-05-30 19:07:25,884 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result_test.csv
+2025-05-30 19:07:25,886 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:08:52,877 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:08:52,878 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:08:52,881 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:08:52,882 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:08:54,605 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:08:54,605 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:08:54,609 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                  | 0/1 [00:00<?, ?it/s]
+2025-05-30 19:09:35,092 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████| 1/1 [00:40<00:00, 40.48s/it]
+2025-05-30 19:09:35,093 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████| 1/1 [00:40<00:00, 40.48s/it]
+2025-05-30 19:09:35,093 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result.csv
+2025-05-30 19:09:35,107 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:13:30,974 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:13:30,974 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:13:30,978 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:13:30,978 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:13:32,699 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:13:32,699 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:13:32,704 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/1 [00:00<?, ?it/s]
+2025-05-30 19:14:17,676 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:44<00:00, 44.97s/it]
+2025-05-30 19:14:17,676 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:44<00:00, 44.97s/it]
+2025-05-30 19:14:17,677 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result.csv
+2025-05-30 19:14:17,679 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:15:22,429 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:15:22,429 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:15:22,432 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:15:22,432 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:15:24,164 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:15:24,164 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:15:24,168 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                      | 0/1 [00:00<?, ?it/s]
+2025-05-30 19:16:07,670 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:43<00:00, 43.50s/it]
+2025-05-30 19:16:07,670 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:43<00:00, 43.50s/it]
+2025-05-30 19:16:07,671 - tsu_nlp.model.logger.normalize_text - INFO - Сохранение результатов в data/results/result.csv
+2025-05-30 19:16:07,674 - tsu_nlp.model.logger.normalize_text - INFO - Нормализация успешно завершена
+2025-05-30 19:22:15,594 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:22:15,595 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:22:16,080 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:22:16,081 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:22:17,798 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:22:17,798 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:22:17,802 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                  | 0/30934 [00:00<?, ?it/s]
+2025-05-30 19:23:52,666 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                      | 1/30934 [01:34<815:06:53, 94.86s/it]
+2025-05-30 19:25:25,002 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                      | 2/30934 [03:07<802:18:55, 93.38s/it]
+2025-05-30 19:27:14,978 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:27:14,978 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:27:15,465 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:27:15,465 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:27:15,465 - tsu_nlp.model.logger.normalize_text - WARNING - CUDA недоступен. Используется CPU. Это может занять очень много времени.
+2025-05-30 19:27:17,154 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cpu
+2025-05-30 19:27:17,154 - tsu_nlp.model.logger.normalize_text - INFO - Размер батча: 32
+2025-05-30 19:27:17,154 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:27:17,157 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                  | 0/30934 [00:00<?, ?it/s]
+2025-05-30 19:28:49,587 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                      | 1/30934 [01:32<794:11:59, 92.43s/it]
+2025-05-30 19:33:48,882 - tsu_nlp.model.logger.normalize_text - INFO - Начало нормализации с использованием T5 модели...
+2025-05-30 19:33:48,882 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка тестового датасета...
+2025-05-30 19:33:49,375 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:33:49,376 - tsu_nlp.model.logger.normalize_text - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:33:49,411 - tsu_nlp.model.logger.normalize_text - INFO - CUDA доступен. Используется GPU: NVIDIA GeForce RTX 4060
+2025-05-30 19:34:13,451 - tsu_nlp.model.logger.normalize_text - INFO - Модель загружена и работает на cuda
+2025-05-30 19:34:13,451 - tsu_nlp.model.logger.normalize_text - INFO - Размер батча: 128
+2025-05-30 19:34:13,451 - tsu_nlp.model.logger.normalize_text - INFO - Начало процесса нормализации...
+2025-05-30 19:34:13,456 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                   | 0/7734 [00:00<?, ?it/s]
+2025-05-30 19:51:05,206 - tsu_nlp.model.logger.normalize_two - INFO - Начало комбинированной нормализации (словарь + нейронная модель)...
+2025-05-30 19:51:05,206 - tsu_nlp.model.logger.normalize_two - INFO - Шаг 1: Применение словарной нормализации...
+2025-05-30 19:51:05,207 - tsu_nlp.model.logger.normalize_text_dict - INFO - Начало нормализации.
+2025-05-30 19:51:05,207 - tsu_nlp.model.logger.normalize_text_dict - INFO - Попытка считать словарь и файла data/dictionary/model_dictionary.json
+2025-05-30 19:51:05,207 - tsu_nlp.model.logger.normalize_text_dict - ERROR - Не удалось считать словарь и файла data/dictionary/model_dictionary.json
+2025-05-30 19:51:05,207 - tsu_nlp.model.logger.normalize_two - ERROR - Не удалось выполнить словарную нормализацию
+2025-05-30 19:51:14,018 - tsu_nlp.model.logger.train_dict - INFO - Начало создания словаря...
+2025-05-30 19:51:32,086 - tsu_nlp.model.logger.train_dict - INFO - Словарь инициализирован.
+2025-05-30 19:51:32,086 - tsu_nlp.model.logger.train_dict - INFO - Попытка записи словаря в файл data/dictionary/model_dictionary.json
+2025-05-30 19:51:32,723 - tsu_nlp.model.logger.train_dict - INFO - Процесс создания словаря завершен успешно.
+2025-05-30 19:51:40,626 - tsu_nlp.model.logger.normalize_two - INFO - Начало комбинированной нормализации (словарь + нейронная модель)...
+2025-05-30 19:51:40,627 - tsu_nlp.model.logger.normalize_two - INFO - Шаг 1: Применение словарной нормализации...
+2025-05-30 19:51:40,627 - tsu_nlp.model.logger.normalize_text_dict - INFO - Начало нормализации.
+2025-05-30 19:51:40,627 - tsu_nlp.model.logger.normalize_text_dict - INFO - Попытка считать словарь и файла data/dictionary/model_dictionary.json
+2025-05-30 19:51:41,211 - tsu_nlp.model.logger.normalize_text_dict - INFO - Попытка считать файл с данными data/inputs/ru_test_2.csv
+2025-05-30 19:52:00,044 - tsu_nlp.model.logger.normalize_two - INFO - Найдено 22067 токенов для нейронной нормализации
+2025-05-30 19:52:00,044 - tsu_nlp.model.logger.normalize_two - INFO - Шаг 2: Применение нейронной нормализации для оставшихся токенов...
+2025-05-30 19:52:00,045 - tsu_nlp.model.logger.normalize_two - INFO - Загрузка модели и токенизатора...
+2025-05-30 19:52:00,045 - tsu_nlp.model.logger.normalize_two - INFO - Загрузка модели из Hugging Face...
+2025-05-30 19:52:00,073 - tsu_nlp.model.logger.normalize_two - INFO - CUDA доступен. Используется GPU: NVIDIA GeForce RTX 4060
+2025-05-30 19:52:03,010 - tsu_nlp.model.logger.normalize_two - INFO - Размер батча: 256
+2025-05-30 19:52:03,014 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                                                     | 0/87 [00:00<?, ?it/s]
+2025-05-30 19:56:09,565 - tsu_nlp.model.logger.write - ERROR - 1%|█                                                                                         | 1/87 [04:06<5:53:23, 246.55s/it]
+2025-05-30 19:57:10,686 - tsu_nlp.model.logger.write - ERROR - 2%|██                                                                                        | 2/87 [05:07<3:14:45, 137.47s/it]
+2025-05-30 19:59:45,564 - tsu_nlp.model.logger.write - ERROR - 3%|███                                                                                       | 3/87 [07:42<3:23:35, 145.42s/it]
+2025-05-30 19:59:50,909 - tsu_nlp.model.logger.write - ERROR - 5%|████▏                                                                                      | 4/87 [07:47<2:04:40, 90.12s/it]
+2025-05-30 19:59:54,108 - tsu_nlp.model.logger.write - ERROR - 6%|█████▏                                                                                     | 5/87 [07:51<1:20:19, 58.78s/it]
+2025-05-30 19:59:57,754 - tsu_nlp.model.logger.write - ERROR - 7%|██████▍                                                                                      | 6/87 [07:54<54:02, 40.03s/it]
+2025-05-30 20:00:01,379 - tsu_nlp.model.logger.write - ERROR - 8%|███████▍                                                                                     | 7/87 [07:58<37:30, 28.13s/it]
+2025-05-30 20:00:04,415 - tsu_nlp.model.logger.write - ERROR - 9%|████████▌                                                                                    | 8/87 [08:01<26:31, 20.14s/it]
+2025-05-30 20:00:06,990 - tsu_nlp.model.logger.write - ERROR - 10%|█████████▌                                                                                   | 9/87 [08:03<19:02, 14.65s/it]
+2025-05-30 20:00:27,854 - tsu_nlp.model.logger.write - ERROR - 11%|██████████▌                                                                                 | 10/87 [08:24<21:15, 16.57s/it]
+2025-05-30 20:00:35,082 - tsu_nlp.model.logger.write - ERROR - 13%|███████████▋                                                                                | 11/87 [08:32<17:21, 13.71s/it]
+2025-05-30 20:02:05,200 - tsu_nlp.model.logger.write - ERROR - 14%|████████████▋                                                                               | 12/87 [10:02<46:11, 36.95s/it]
+2025-05-30 20:02:59,647 - tsu_nlp.model.logger.write - ERROR - 15%|█████████████▋                                                                              | 13/87 [10:56<52:06, 42.25s/it]
+2025-05-30 20:03:21,559 - tsu_nlp.model.logger.write - ERROR - 16%|██████████████▊                                                                             | 14/87 [11:18<43:55, 36.11s/it]
+2025-05-30 20:03:41,372 - tsu_nlp.model.logger.write - ERROR - 17%|███████████████▊                                                                            | 15/87 [11:38<37:26, 31.20s/it]
+2025-05-30 20:21:14,886 - tsu_nlp.model.logger.write - ERROR - 18%|████████████████▎                                                                        | 16/87 [29:11<6:41:02, 338.91s/it]
+2025-05-30 20:21:47,400 - tsu_nlp.model.logger.write - ERROR - 20%|█████████████████▍                                                                       | 17/87 [29:44<4:47:54, 246.78s/it]
+2025-05-30 20:22:42,093 - tsu_nlp.model.logger.write - ERROR - 21%|██████████████████▍                                                                      | 18/87 [30:39<3:37:25, 189.06s/it]
+2025-05-30 20:22:57,530 - tsu_nlp.model.logger.write - ERROR - 22%|███████████████████▍                                                                     | 19/87 [30:54<2:35:10, 136.91s/it]
+2025-05-30 20:23:50,551 - tsu_nlp.model.logger.write - ERROR - 23%|████████████████████▍                                                                    | 20/87 [31:47<2:04:45, 111.73s/it]
+2025-05-30 20:24:19,891 - tsu_nlp.model.logger.write - ERROR - 24%|█████████████████████▋                                                                    | 21/87 [32:16<1:35:41, 87.00s/it]
+2025-05-30 20:24:41,912 - tsu_nlp.model.logger.write - ERROR - 25%|██████████████████████▊                                                                   | 22/87 [32:38<1:13:07, 67.50s/it]
+2025-05-30 20:25:07,219 - tsu_nlp.model.logger.write - ERROR - 26%|████████████████████████▎                                                                   | 23/87 [33:04<58:29, 54.84s/it]
+2025-05-30 20:25:32,196 - tsu_nlp.model.logger.write - ERROR - 28%|█████████████████████████▍                                                                  | 24/87 [33:29<48:10, 45.88s/it]
+2025-05-30 20:25:55,074 - tsu_nlp.model.logger.write - ERROR - 29%|██████████████████████████▍                                                                 | 25/87 [33:52<40:16, 38.98s/it]
+2025-05-30 20:26:11,062 - tsu_nlp.model.logger.write - ERROR - 30%|███████████████████████████▍                                                                | 26/87 [34:08<32:36, 32.08s/it]
+2025-05-30 20:26:26,721 - tsu_nlp.model.logger.write - ERROR - 31%|████████████████████████████▌                                                               | 27/87 [34:23<27:09, 27.15s/it]
+2025-05-30 20:26:53,832 - tsu_nlp.model.logger.write - ERROR - 32%|█████████████████████████████▌                                                              | 28/87 [34:50<26:41, 27.14s/it]
+2025-05-30 20:27:07,368 - tsu_nlp.model.logger.write - ERROR - 33%|██████████████████████████████▋                                                             | 29/87 [35:04<22:17, 23.06s/it]
+2025-05-30 20:28:25,197 - tsu_nlp.model.logger.write - ERROR - 34%|███████████████████████████████▋                                                            | 30/87 [36:22<37:30, 39.49s/it]
+2025-05-30 20:28:41,594 - tsu_nlp.model.logger.write - ERROR - 36%|████████████████████████████████▊                                                           | 31/87 [36:38<30:23, 32.56s/it]
+2025-05-30 20:28:57,483 - tsu_nlp.model.logger.write - ERROR - 37%|█████████████████████████████████▊                                                          | 32/87 [36:54<25:15, 27.56s/it]
+2025-05-30 20:30:14,867 - tsu_nlp.model.logger.write - ERROR - 38%|██████████████████████████████████▉                                                         | 33/87 [38:11<38:15, 42.51s/it]
+2025-05-30 20:30:56,504 - tsu_nlp.model.logger.write - ERROR - 39%|███████████████████████████████████▉                                                        | 34/87 [38:53<37:19, 42.25s/it]
+2025-05-30 20:31:44,286 - tsu_nlp.model.logger.write - ERROR - 40%|█████████████████████████████████████                                                       | 35/87 [39:41<38:03, 43.91s/it]
+2025-05-30 20:31:58,760 - tsu_nlp.model.logger.write - ERROR - 41%|██████████████████████████████████████                                                      | 36/87 [39:55<29:48, 35.08s/it]
+2025-05-30 20:32:12,680 - tsu_nlp.model.logger.write - ERROR - 43%|███████████████████████████████████████▏                                                    | 37/87 [40:09<23:56, 28.73s/it]
+2025-05-30 20:32:27,542 - tsu_nlp.model.logger.write - ERROR - 44%|████████████████████████████████████████▏                                                   | 38/87 [40:24<20:03, 24.57s/it]
+2025-05-30 20:32:42,689 - tsu_nlp.model.logger.write - ERROR - 45%|█████████████████████████████████████████▏                                                  | 39/87 [40:39<17:23, 21.74s/it]
+2025-05-30 20:32:58,985 - tsu_nlp.model.logger.write - ERROR - 46%|██████████████████████████████████████████▎                                                 | 40/87 [40:55<15:45, 20.11s/it]
+2025-05-30 20:33:15,469 - tsu_nlp.model.logger.write - ERROR - 47%|███████████████████████████████████████████▎                                                | 41/87 [41:12<14:34, 19.02s/it]
+2025-05-30 20:33:29,969 - tsu_nlp.model.logger.write - ERROR - 48%|████████████████████████████████████████████▍                                               | 42/87 [41:26<13:14, 17.67s/it]
+2025-05-30 20:33:42,575 - tsu_nlp.model.logger.write - ERROR - 49%|█████████████████████████████████████████████▍                                              | 43/87 [41:39<11:50, 16.15s/it]
+2025-05-30 20:35:14,592 - tsu_nlp.model.logger.write - ERROR - 51%|██████████████████████████████████████████████▌                                             | 44/87 [43:11<27:53, 38.91s/it]
+2025-05-30 20:35:32,463 - tsu_nlp.model.logger.write - ERROR - 52%|███████████████████████████████████████████████▌                                            | 45/87 [43:29<22:49, 32.60s/it]
+2025-05-30 20:39:14,331 - tsu_nlp.model.logger.write - ERROR - 53%|███████████████████████████████████████████████▌                                          | 46/87 [47:11<1:01:04, 89.38s/it]
+2025-05-30 20:39:34,652 - tsu_nlp.model.logger.write - ERROR - 54%|█████████████████████████████████████████████████▋                                          | 47/87 [47:31<45:46, 68.66s/it]
+2025-05-30 20:39:52,988 - tsu_nlp.model.logger.write - ERROR - 55%|██████████████████████████████████████████████████▊                                         | 48/87 [47:49<34:48, 53.56s/it]
+2025-05-30 20:40:10,012 - tsu_nlp.model.logger.write - ERROR - 56%|███████████████████████████████████████████████████▊                                        | 49/87 [48:06<26:58, 42.60s/it]
+2025-05-30 20:41:20,267 - tsu_nlp.model.logger.write - ERROR - 57%|████████████████████████████████████████████████████▊                                       | 50/87 [49:17<31:23, 50.90s/it]
+2025-05-30 20:41:39,779 - tsu_nlp.model.logger.write - ERROR - 59%|█████████████████████████████████████████████████████▉                                      | 51/87 [49:36<24:53, 41.48s/it]
+2025-05-30 20:42:01,423 - tsu_nlp.model.logger.write - ERROR - 60%|██████████████████████████████████████████████████████▉                                     | 52/87 [49:58<20:43, 35.53s/it]
+2025-05-30 20:42:56,130 - tsu_nlp.model.logger.write - ERROR - 61%|████████████████████████████████████████████████████████                                    | 53/87 [50:53<23:23, 41.28s/it]
+2025-05-30 20:43:53,930 - tsu_nlp.model.logger.write - ERROR - 62%|█████████████████████████████████████████████████████████                                   | 54/87 [51:50<25:25, 46.24s/it]
+2025-05-30 20:44:40,041 - tsu_nlp.model.logger.write - ERROR - 63%|██████████████████████████████████████████████████████████▏                                 | 55/87 [52:37<24:38, 46.20s/it]
+2025-05-30 20:45:00,314 - tsu_nlp.model.logger.write - ERROR - 64%|███████████████████████████████████████████████████████████▏                                | 56/87 [52:57<19:51, 38.42s/it]
+2025-05-30 20:45:28,155 - tsu_nlp.model.logger.write - ERROR - 66%|████████████████████████████████████████████████████████████▎                               | 57/87 [53:25<17:37, 35.25s/it]
+2025-05-30 20:46:01,641 - tsu_nlp.model.logger.write - ERROR - 67%|█████████████████████████████████████████████████████████████▎                              | 58/87 [53:58<16:46, 34.72s/it]
+2025-05-30 20:46:56,649 - tsu_nlp.model.logger.write - ERROR - 68%|██████████████████████████████████████████████████████████████▍                             | 59/87 [54:53<19:02, 40.81s/it]
+2025-05-30 20:47:12,401 - tsu_nlp.model.logger.write - ERROR - 69%|███████████████████████████████████████████████████████████████▍                            | 60/87 [55:09<14:58, 33.29s/it]
+2025-05-30 20:48:34,549 - tsu_nlp.model.logger.write - ERROR - 70%|████████████████████████████████████████████████████████████████▌                           | 61/87 [56:31<20:46, 47.95s/it]
+2025-05-30 20:49:56,866 - tsu_nlp.model.logger.write - ERROR - 71%|█████████████████████████████████████████████████████████████████▌                          | 62/87 [57:53<24:16, 58.26s/it]
+2025-05-30 20:50:14,884 - tsu_nlp.model.logger.write - ERROR - 72%|██████████████████████████████████████████████████████████████████▌                         | 63/87 [58:11<18:28, 46.19s/it]
+2025-05-30 20:50:32,563 - tsu_nlp.model.logger.write - ERROR - 74%|███████████████████████████████████████████████████████████████████▋                        | 64/87 [58:29<14:25, 37.63s/it]
+2025-05-30 20:51:13,909 - tsu_nlp.model.logger.write - ERROR - 75%|████████████████████████████████████████████████████████████████████▋                       | 65/87 [59:10<14:12, 38.75s/it]
+2025-05-30 20:51:36,866 - tsu_nlp.model.logger.write - ERROR - 76%|█████████████████████████████████████████████████████████████████████▊                      | 66/87 [59:33<11:54, 34.01s/it]
+2025-05-30 20:51:54,920 - tsu_nlp.model.logger.write - ERROR - 77%|██████████████████████████████████████████████████████████████████████▊                     | 67/87 [59:51<09:44, 29.22s/it]
+2025-05-30 20:52:35,348 - tsu_nlp.model.logger.write - ERROR - 78%|██████████████████████████████████████████████████████████████████████▎                   | 68/87 [1:00:32<10:19, 32.58s/it]
+2025-05-30 20:53:00,019 - tsu_nlp.model.logger.write - ERROR - 79%|███████████████████████████████████████████████████████████████████████▍                  | 69/87 [1:00:57<09:03, 30.21s/it]
+2025-05-30 20:53:55,324 - tsu_nlp.model.logger.write - ERROR - 80%|████████████████████████████████████████████████████████████████████████▍                 | 70/87 [1:01:52<10:41, 37.74s/it]
+2025-05-30 20:54:16,862 - tsu_nlp.model.logger.write - ERROR - 82%|█████████████████████████████████████████████████████████████████████████▍                | 71/87 [1:02:13<08:46, 32.88s/it]
+2025-05-30 20:54:32,615 - tsu_nlp.model.logger.write - ERROR - 83%|██████████████████████████████████████████████████████████████████████████▍               | 72/87 [1:02:29<06:56, 27.74s/it]
+2025-05-30 20:56:20,299 - tsu_nlp.model.logger.write - ERROR - 84%|███████████████████████████████████████████████████████████████████████████▌              | 73/87 [1:04:17<12:04, 51.72s/it]
+2025-05-30 20:56:37,976 - tsu_nlp.model.logger.write - ERROR - 85%|████████████████████████████████████████████████████████████████████████████▌             | 74/87 [1:04:34<08:59, 41.51s/it]
+2025-05-30 20:56:53,753 - tsu_nlp.model.logger.write - ERROR - 86%|█████████████████████████████████████████████████████████████████████████████▌            | 75/87 [1:04:50<06:45, 33.79s/it]
+2025-05-30 20:57:11,751 - tsu_nlp.model.logger.write - ERROR - 87%|██████████████████████████████████████████████████████████████████████████████▌           | 76/87 [1:05:08<05:19, 29.05s/it]
+2025-05-30 20:59:08,162 - tsu_nlp.model.logger.write - ERROR - 89%|███████████████████████████████████████████████████████████████████████████████▋          | 77/87 [1:07:05<09:12, 55.26s/it]
+2025-05-30 20:59:30,957 - tsu_nlp.model.logger.write - ERROR - 90%|████████████████████████████████████████████████████████████████████████████████▋         | 78/87 [1:07:27<06:49, 45.52s/it]
+2025-05-30 20:59:50,130 - tsu_nlp.model.logger.write - ERROR - 91%|█████████████████████████████████████████████████████████████████████████████████▋        | 79/87 [1:07:47<05:00, 37.62s/it]
+2025-05-30 21:00:25,044 - tsu_nlp.model.logger.write - ERROR - 92%|██████████████████████████████████████████████████████████████████████████████████▊       | 80/87 [1:08:22<04:17, 36.81s/it]
+2025-05-30 21:00:43,042 - tsu_nlp.model.logger.write - ERROR - 93%|███████████████████████████████████████████████████████████████████████████████████▊      | 81/87 [1:08:40<03:06, 31.16s/it]
+2025-05-30 21:01:01,053 - tsu_nlp.model.logger.write - ERROR - 94%|████████████████████████████████████████████████████████████████████████████████████▊     | 82/87 [1:08:58<02:16, 27.22s/it]
+2025-05-30 21:01:18,348 - tsu_nlp.model.logger.write - ERROR - 95%|█████████████████████████████████████████████████████████████████████████████████████▊    | 83/87 [1:09:15<01:36, 24.24s/it]
+2025-05-30 21:01:35,642 - tsu_nlp.model.logger.write - ERROR - 97%|██████████████████████████████████████████████████████████████████████████████████████▉   | 84/87 [1:09:32<01:06, 22.16s/it]
+2025-05-30 21:01:52,941 - tsu_nlp.model.logger.write - ERROR - 98%|███████████████████████████████████████████████████████████████████████████████████████▉  | 85/87 [1:09:49<00:41, 20.70s/it]
+2025-05-30 21:02:12,116 - tsu_nlp.model.logger.write - ERROR - 99%|████████████████████████████████████████████████████████████████████████████████████████▉ | 86/87 [1:10:09<00:20, 20.24s/it]
+2025-05-30 21:02:14,494 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████| 87/87 [1:10:11<00:00, 14.88s/it]
+2025-05-30 21:02:14,504 - tsu_nlp.model.logger.write - ERROR - 100%|██████████████████████████████████████████████████████████████████████████████████████████| 87/87 [1:10:11<00:00, 48.41s/it]
+2025-05-30 21:02:14,605 - tsu_nlp.model.logger.normalize_two - INFO - Сохранение результатов в data/results/result.csv
+2025-05-30 21:02:15,136 - tsu_nlp.model.logger.normalize_two - INFO - Комбинированная нормализация успешно завершена

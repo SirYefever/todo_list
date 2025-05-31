@@ -1,6 +1,8 @@
 import logging
 import threading
 import inspect
+import sys
+import os
 
 # ANSI-коды цветов для консольного вывода
 class Colors:
@@ -19,37 +21,41 @@ class SingletonLogger:
     """
     _instance = None
     _lock = threading.Lock()
+    _logger = None
 
-    def __new__(cls, *args, **kwargs):
-        """
-        Переопределение метода __new__ для реализации паттерна Singleton.
-        """
-        if not cls._instance:
+    def __new__(cls):
+        if cls._instance is None:
             with cls._lock:
-                if not cls._instance:
-                    cls._instance = super().__new__(cls)
-                    cls._instance._initialize(*args, **kwargs)
+                if cls._instance is None:
+                    cls._instance = super(SingletonLogger, cls).__new__(cls)
+                    cls._instance._setup_logger()
         return cls._instance
 
-    def _initialize(self, level=logging.DEBUG):
-        """
-        Инициализация логгера с настройкой уровня логирования, файлового и консольного обработчиков.
-        """
-        self.logger = logging.getLogger()
-        self.logger.setLevel(level)
+    def _setup_logger(self):
+        self._logger = logging.getLogger(__name__)
+        self._logger.setLevel(logging.INFO)
 
-        log_file_path = "./data/log_file.log"
-        file_handler = logging.FileHandler(log_file_path)
-        file_handler.setLevel(logging.DEBUG)
+        # Create logs directory if it doesn't exist
+        os.makedirs('logs', exist_ok=True)
 
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(level)
+        # File handler with UTF-8 encoding
+        file_handler = logging.FileHandler('logs/normalization.log', encoding='utf-8')
+        file_handler.setLevel(logging.INFO)
 
-        file_handler.setFormatter(self._get_formatter(is_colored=False))
-        console_handler.setFormatter(self._get_formatter(is_colored=True))
+        # Console handler with UTF-8 encoding for Windows
+        console_handler = logging.StreamHandler(sys.stdout)
+        console_handler.setLevel(logging.INFO)
+        if sys.platform == 'win32':
+            sys.stdout.reconfigure(encoding='utf-8')
 
-        self.logger.addHandler(file_handler)
-        self.logger.addHandler(console_handler)
+        # Create formatters and add them to the handlers
+        formatter = logging.Formatter('%(asctime)s - %(name)s.%(funcName)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
+
+        # Add the handlers to the logger
+        self._logger.addHandler(file_handler)
+        self._logger.addHandler(console_handler)
 
     def _get_formatter(self, is_colored):
         """
@@ -101,10 +107,10 @@ class SingletonLogger:
         """
         Устанавливает уровень логирования.
         """
-        self.logger.setLevel(level)
+        self._logger.setLevel(level)
 
     def get_logger(self):
         """
         Возвращает экземпляр логгера.
         """
-        return self.logger
+        return self._logger
