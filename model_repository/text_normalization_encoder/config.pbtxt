@@ -1,0 +1,54 @@
+name: "text_normalization_encoder"
+backend: "onnxruntime"
+platform: "onnxruntime_onnx"
+max_batch_size: 32
+
+input [
+  {
+    name: "input_ids"
+    data_type: TYPE_INT64
+    dims: [ -1 ]  # sequence_length
+    reshape { shape: [ -1 ] }
+  },
+  {
+    name: "attention_mask"
+    data_type: TYPE_INT64
+    dims: [ -1 ]  # sequence_length
+    reshape { shape: [ -1 ] }
+  }
+]
+
+output [
+  {
+    name: "last_hidden_state"
+    data_type: TYPE_FP16
+    dims: [ -1, 1024 ]  # [sequence_length, hidden_size]
+    reshape { shape: [ -1, 1024 ] }
+  }
+]
+
+instance_group [
+  {
+    count: 1
+    kind: KIND_CPU
+  }
+]
+
+dynamic_batching {
+  preferred_batch_size: [ 4, 8, 16 ]
+  max_queue_delay_microseconds: 100
+}
+
+version_policy {
+  specific {
+    versions: [ 1 ]
+  }
+}
+
+runtime {
+  onnxruntime {
+    execution_mode: "SEQUENTIAL"
+    inter_op_num_threads: 1
+    intra_op_num_threads: 1
+  }
+} 

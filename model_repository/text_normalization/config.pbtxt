@@ -1,61 +1,60 @@
 name: "text_normalization"
-backend: "tensorrt"
-platform: "tensorrt_plan"
-max_batch_size: 8
+backend: "onnxruntime"
+platform: "onnxruntime_onnx"
+max_batch_size: 32
 
 input [
   {
     name: "input_ids"
     data_type: TYPE_INT64
-    dims: [ -1 ]  # Variable sequence length
+    dims: [ -1 ]  # sequence_length
+    reshape { shape: [ -1 ] }
   },
   {
-    name: "attention_mask"
+    name: "encoder_attention_mask"
     data_type: TYPE_INT64
-    dims: [ -1 ]  # Variable sequence length
+    dims: [ -1 ]  # sequence_length
+    reshape { shape: [ -1 ] }
+  },
+  {
+    name: "encoder_hidden_states"
+    data_type: TYPE_FP16
+    dims: [ -1, 1024 ]  # [sequence_length, hidden_size]
+    reshape { shape: [ -1, 1024 ] }
   }
 ]
 
 output [
   {
-    name: "encoder_last_hidden_state"
-    data_type: TYPE_FP32
-    dims: [ -1, 1024 ]  # [sequence_length, hidden_size]
-  },
-  {
     name: "logits"
-    data_type: TYPE_FP32
-    dims: [ -1, -1, 50364 ]  # [sequence_length, batch_size, vocab_size]
+    data_type: TYPE_FP16
+    dims: [ -1, 50364 ]  # [sequence_length, vocab_size]
+    reshape { shape: [ -1, 50364 ] }
   }
 ]
 
 instance_group [
   {
     count: 1
-    kind: KIND_GPU
-    gpus: [ 0 ]
+    kind: KIND_CPU
   }
 ]
 
 dynamic_batching {
-  preferred_batch_size: [ 4, 8 ]
+  preferred_batch_size: [ 4, 8, 16 ]
   max_queue_delay_microseconds: 100
 }
 
-optimization {
-  execution_accelerators {
-    gpu_execution_accelerator: [
-      {
-        name: "tensorrt"
-        parameters { 
-          key: "precision_mode" 
-          value: "FP16" 
-        }
-        parameters { 
-          key: "max_workspace_size_bytes" 
-          value: "1073741824"  # 1GB
-        }
-      }
-    ]
+version_policy {
+  specific {
+    versions: [ 1 ]
+  }
+}
+
+runtime {
+  onnxruntime {
+    execution_mode: "SEQUENTIAL"
+    inter_op_num_threads: 1
+    intra_op_num_threads: 1
   }
 } 

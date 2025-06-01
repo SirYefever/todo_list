@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  triton:
+    build:
+      context: .
+      dockerfile: triton.Dockerfile
+    ports:
+      - "8000:8000"  # HTTP API
+      - "8001:8001"  # gRPC API
+      - "8002:8002"  # Metrics
+    volumes:
+      - ./model_repository:/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all 
