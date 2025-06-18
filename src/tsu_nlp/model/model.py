@@ -9,7 +9,7 @@ from pathlib import Path
 import pandas as pd #
 import sys
 import logging
-from tsu_nlp.model.logger import SingletonLogger
+from logger import SingletonLogger
 #from clearml import Task, Logger
 import torch
 from transformers import T5ForConditionalGeneration, GPT2Tokenizer
@@ -32,8 +32,8 @@ logger = SingletonLogger().get_logger()
 # Настройка кэширования модели
 os.environ['TRANSFORMERS_CACHE'] = 'models_cache'
 MODEL_NAME = "saarus72/russian_text_normalizer"
-ONNX_MODEL_PATH = "model_repository/text_normalization/1/model.onnx"
-ONNX_ENCODER_PATH = "model_repository/text_normalization/1/encoder_model.onnx"
+ONNX_MODEL_PATH = "E:/dev/TSU.NLP_3/model_repository/text_normalization/1/model.onnx"
+ONNX_ENCODER_PATH = "E:/dev/TSU.NLP_3/model_repository/text_normalization/1/encoder_model.onnx"
 
 class LoggerWriter:
     """
@@ -72,13 +72,20 @@ class My_TextNormalization_Model:
         """
         Инициализация класса с указанием путей сохранения модели и результатов предсказания
         """
-        self.dictionary_path = 'data/dictionary/model_dictionary.json'
-        self.results_path = 'data/results.csv'
-        self.train_path = 'data/inputs/ru_train.csv'
-        self.test_path = 'data/inputs/ru_test_2.csv'
-        self.result_path = 'data/results/result.csv'
+        # Get the project root directory (3 levels up from this file)
+        self.project_root = Path(__file__).parent.parent.parent.parent.absolute()
         
-        # Create cache directory
+        # Define all paths relative to project root
+        self.dictionary_path = os.path.join(self.project_root, 'data', 'dictionary', 'model_dictionary.json')
+        self.results_path = os.path.join(self.project_root, 'data', 'results.csv')
+        self.train_path = os.path.join(self.project_root, 'data', 'inputs', 'ru_train.csv')
+        self.test_path = os.path.join(self.project_root, 'data', 'inputs', 'ru_test_2.csv')
+        self.result_path = os.path.join(self.project_root, 'data', 'results', 'result.csv')
+        
+        # Create necessary directories
+        os.makedirs(os.path.dirname(self.dictionary_path), exist_ok=True)
+        os.makedirs(os.path.dirname(self.results_path), exist_ok=True)
+        os.makedirs(os.path.dirname(self.result_path), exist_ok=True)
         os.makedirs('models_cache', exist_ok=True)
 
     def train_dict(self):
