@@ -1,5 +1,44 @@
-/src/tsu_nlp/data/inputs
-inputs
-/data
-/models_cache
-/model_repository/text_normalization/1/model.pt
+# Логи и временные файлы
+*.log
+/logs/
+normalization.log
+
+# Данные и кеши моделей
+/data/
+/models_cache/
+/src/tsu_nlp/data/inputs/
+
+# Игнорировать все файлы моделей (кроме конфигов Triton)
+*.pt
+*.bin
+*.onnx
+*.pth
+# конфиги Triton - не игнорировать
+!model_repository/**/config.pbtxt
+
+# Кеши Python
+__pycache__/
+*.py[cod]
+__init__.cpython-*.pyc  # Динамические кеш-файлы, как в вашей структуре
+
+# Сгенерированные файлы и артефакты
+*.pyc
+__pycache__/
+
+# Тестовые артефакты
+/tests/outputs/
+
+# IDE и системные файлы
+.DS_Store
+.vscode/
+.idea/
+
+# Docker и окружение
+docker-compose.yaml
+Dockerfile
+triton.Dockerfile
+.venv/
+venv/
+env/
+poetry.lock
+*.egg-info/
