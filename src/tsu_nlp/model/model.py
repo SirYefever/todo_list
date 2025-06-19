@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 import sys
 import logging
-from .logger import SingletonLogger
+from logger import SingletonLogger
 import torch
 from transformers import T5ForConditionalGeneration, GPT2Tokenizer
 from tqdm import tqdm
