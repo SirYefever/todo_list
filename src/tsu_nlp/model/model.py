@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 import sys
 import logging
-from .logger import SingletonLogger
+from logger import SingletonLogger
 import torch
 from transformers import T5ForConditionalGeneration, GPT2Tokenizer
 from tqdm import tqdm
@@ -63,17 +63,17 @@ class My_TextNormalization_Model:
         """
         Инициализация класса с указанием путей сохранения модели и результатов предсказания
         """
-        # Get the project root directory (3 levels up from this file)
+        # Получаем корневую директорию проекта (3 уровня вверх от текущего файла)
         self.project_root = Path(__file__).parent.parent.parent.parent.absolute()
         
-        # Define all paths relative to project root
+        # Определяем все пути относительно корня проекта
         self.dictionary_path = os.path.join(self.project_root, 'data', 'dictionary', 'model_dictionary.json')
         self.results_path = os.path.join(self.project_root, 'data', 'results.csv')
         self.train_path = os.path.join(self.project_root, 'data', 'inputs', 'ru_train.csv')
         self.test_path = os.path.join(self.project_root, 'data', 'inputs', 'ru_test_2.csv')
         self.result_path = os.path.join(self.project_root, 'data', 'results', 'result.csv')
         
-        # Create necessary directories
+        # Создаем необходимые директории
         os.makedirs(os.path.dirname(self.dictionary_path), exist_ok=True)
         os.makedirs(os.path.dirname(self.results_path), exist_ok=True)
         os.makedirs(os.path.dirname(self.result_path), exist_ok=True)
@@ -156,7 +156,7 @@ class My_TextNormalization_Model:
         """
         Комбинированный метод нормализации, использующий сначала словарь, затем нейронную модель с ONNX
         Args:
-            test_mode (bool): If True, only process first 10 items for testing
+            test_mode (bool): Если True, обрабатывает только первые 10 элементов для тестирования
         """
         logger.info("Начало комбинированной нормализации (словарь + нейронная модель ONNX)...")
         
@@ -188,17 +188,17 @@ class My_TextNormalization_Model:
         try:
             logger.info("Загрузка модели ONNX и токенизатора...")
             
-            # Initialize tokenizer
+            # Инициализация токенизатора
             tokenizer = GPT2Tokenizer.from_pretrained(MODEL_NAME, cache_dir='models_cache')
             
-            # Set up ONNX Runtime session with optimizations
+            # Настройка сессии ONNX Runtime с оптимизациями
             sess_options = ort.SessionOptions()
             sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
             sess_options.intra_op_num_threads = 1
             sess_options.inter_op_num_threads = 1
             
-            # Create ONNX Runtime session
-            providers = ['CPUExecutionProvider']  # Start with CPU provider
+            # Создание сессии ONNX Runtime
+            providers = ['CPUExecutionProvider']  # Начинаем с CPU провайдера
             try:
                 if 'CUDAExecutionProvider' in ort.get_available_providers():
                     providers = ['CUDAExecutionProvider', 'CPUExecutionProvider']
@@ -208,7 +208,7 @@ class My_TextNormalization_Model:
             except Exception as e:
                 logger.warning(f"Ошибка при проверке CUDA: {str(e)}. Используется CPU.")
                 
-            # Load encoder and decoder ONNX models
+            # Загрузка моделей энкодера и декодера ONNX
             encoder_session = ort.InferenceSession(
                 ONNX_ENCODER_PATH,
                 providers=providers,
@@ -220,18 +220,18 @@ class My_TextNormalization_Model:
                 sess_options=sess_options
             )
             
-            # Get model input names
+            # Получение имен входов модели
             encoder_input_names = [input.name for input in encoder_session.get_inputs()]
             decoder_input_names = [input.name for input in decoder_session.get_inputs()]
             logger.info(f"Доступные входы энкодера: {encoder_input_names}")
             logger.info(f"Доступные входы декодера: {decoder_input_names}")
             
-            # Process only tokens that need neural normalization
+            # Обработка только токенов, требующих нейронной нормализации
             neural_texts = dict_results.iloc[needs_neural]
-            batch_size = 32  # Reduced batch size for testing
+            batch_size = 32  # Уменьшенный размер батча для тестирования
             if test_mode:
                 batch_size = 2
-                neural_texts = neural_texts.head(10)  # Process only 10 items in test mode
+                neural_texts = neural_texts.head(10)  # Обработка только 10 элементов в тестовом режиме
             
             logger.info(f"Размер батча: {batch_size}")
             normalized_neural = []
@@ -250,33 +250,33 @@ class My_TextNormalization_Model:
                     formatted_texts.append(formatted_text)
                     max_len = max(max_len, len(formatted_text))
                 
-                # Tokenize inputs
+                # Токенизация входных данных
                 inputs = tokenizer(
                     formatted_texts, 
                     padding=True, 
                     truncation=True, 
                     max_length=min(max_len + 10, 128),
-                    return_tensors="np"  # Return numpy arrays for ONNX
+                    return_tensors="np"  # Возвращаем numpy массивы для ONNX
                 )
                 
-                # Run encoder
+                # Запуск энкодера
                 encoder_inputs = {
                     'input_ids': inputs['input_ids'].astype(np.int64),
                     'attention_mask': inputs['attention_mask'].astype(np.int64)
                 }
                 encoder_outputs = encoder_session.run(None, encoder_inputs)
                 
-                # Initialize decoder inputs
+                # Инициализация входов декодера
                 decoder_input_ids = np.array([[tokenizer.pad_token_id]] * len(batch_texts), dtype=np.int64)
                 
-                # Run decoder with encoder outputs
+                # Запуск декодера с выходами энкодера
                 decoder_inputs = {
                     'input_ids': decoder_input_ids,
                     'encoder_hidden_states': encoder_outputs[0],
                     'encoder_attention_mask': inputs['attention_mask'].astype(np.int64)
                 }
                 
-                # Generate sequence
+                # Генерация последовательности
                 max_length = min(max_len + 20, 128)
                 output_ids = [decoder_input_ids]
                 
@@ -285,18 +285,18 @@ class My_TextNormalization_Model:
                     next_token_logits = decoder_outputs[0][:, -1, :]
                     next_tokens = np.argmax(next_token_logits, axis=-1)
                     
-                    # Add the predicted tokens to the sequence
+                    # Добавление предсказанных токенов к последовательности
                     next_tokens = next_tokens.reshape(-1, 1)
                     decoder_input_ids = np.concatenate([decoder_input_ids, next_tokens], axis=1)
                     
-                    # Update decoder inputs for next iteration
+                    # Обновление входов декодера для следующей итерации
                     decoder_inputs['input_ids'] = decoder_input_ids
                     
-                    # Check if all sequences have generated EOS token
+                    # Проверка, сгенерировали ли все последовательности токен EOS
                     if all(tokenizer.eos_token_id in seq for seq in decoder_input_ids):
                         break
                 
-                # Decode outputs
+                # Декодирование выходов
                 decoded_outputs = tokenizer.batch_decode(decoder_input_ids, skip_special_tokens=True)
                 
                 cleaned_outputs = []
@@ -307,11 +307,11 @@ class My_TextNormalization_Model:
                 
                 normalized_neural.extend(cleaned_outputs)
             
-            # Update results with neural normalization
+            # Обновление результатов нейронной нормализацией
             for idx, neural_text in zip(needs_neural[:len(normalized_neural)], normalized_neural):
                 dict_results.at[idx, 'after'] = neural_text
             
-            # Save final results
+            # Сохранение финальных результатов
             output_path = self.result_path.replace('.csv', '_test.csv') if test_mode else self.result_path
             logger.info(f"Сохранение результатов в {output_path}")
             dict_results[['id', 'after']].to_csv(output_path, index=False, encoding='utf-8')
@@ -351,21 +351,21 @@ class My_TextNormalization_Model:
         try:
             logger.info("Загрузка модели и токенизатора...")
             
-            # Check if model is already cached
+            # Проверка, кэширована ли уже модель
             cache_dir = Path('models_cache')
             if not (cache_dir / 'model').exists():
                 logger.info("Загрузка модели из Hugging Face...")
             else:
                 logger.info("Использование кэшированной модели...")
 
-            # Check CUDA availability
+            # Проверка доступности CUDA
             if torch.cuda.is_available():
                 logger.info(f"CUDA доступен. Используется GPU: {torch.cuda.get_device_name(0)}")
                 device = torch.device("cuda")
-                # Set memory optimization flags
+                # Установка флагов оптимизации памяти
                 torch.cuda.empty_cache()
                 torch.backends.cudnn.benchmark = True
-                # Enable mixed precision
+                # Включение смешанной точности
                 torch.backends.cuda.matmul.allow_tf32 = True
                 torch.backends.cudnn.allow_tf32 = True
             else:
@@ -390,7 +390,7 @@ class My_TextNormalization_Model:
             return
 
         normalized_texts = []
-        # Optimize batch size for GPU memory
+        # Оптимизация размера батча для памяти GPU
         batch_size = 256 if torch.cuda.is_available() else 32
         if test_mode:
             batch_size = 2
@@ -400,19 +400,19 @@ class My_TextNormalization_Model:
         try:
             logger.info("Начало процесса нормализации...")
             
-            # Process in chunks to avoid memory issues
+            # Обработка чанками для избежания проблем с памятью
             chunk_size = 10000
             for chunk_start in range(0, len(test), chunk_size):
                 chunk_end = min(chunk_start + chunk_size, len(test))
                 chunk = test[chunk_start:chunk_end]
                 
-                with torch.inference_mode():  # Faster than no_grad()
+                with torch.inference_mode():  # Быстрее чем no_grad()
                     for i in tqdm(range(0, len(chunk), batch_size)):
                         batch_texts = chunk['before'].iloc[i:i + batch_size].tolist()
                         
-                        # Format inputs according to model requirements
+                        # Форматирование входных данных согласно требованиям модели
                         formatted_texts = []
-                        max_len = 0  # For dynamic padding
+                        max_len = 0  # Для динамического паддинга
                         for text in batch_texts:
                             if any(c.isdigit() or c.isascii() and c.isalpha() for c in text):
                                 if text.isdigit():
@@ -430,7 +430,7 @@ class My_TextNormalization_Model:
                             formatted_texts, 
                             padding=True, 
                             truncation=True, 
-                            max_length=min(max_len + 10, 128),  # Dynamic max length with small buffer
+                            max_length=min(max_len + 10, 128),  # Динамическая максимальная длина с небольшим буфером
                             return_tensors="pt"
                         )
                         input_ids = inputs["input_ids"].to(device)
@@ -440,10 +440,10 @@ class My_TextNormalization_Model:
                         outputs = model.generate(
                             input_ids=input_ids,
                             attention_mask=attention_mask,
-                            max_length=min(max_len + 20, 128),  # Dynamic max length for outputs
-                            num_beams=2,  # Reduced from 4 for speed
+                            max_length=min(max_len + 20, 128),  # Динамическая максимальная длина для выходов
+                            num_beams=2,  # Уменьшено с 4 для скорости
                             early_stopping=True,
-                            do_sample=False,  # Deterministic generation is faster
+                            do_sample=False,  # Детерминированная генерация быстрее
                             use_cache=True,
                             eos_token_id=tokenizer.eos_token_id
                         )
@@ -460,7 +460,7 @@ class My_TextNormalization_Model:
                         
                         normalized_texts.extend(cleaned_outputs)
                         
-                # Clear GPU memory after each chunk
+                # Очистка памяти GPU после каждого чанка
                 if torch.cuda.is_available():
                     torch.cuda.empty_cache()
 
@@ -495,7 +495,7 @@ if __name__ == '__main__':
     # Считываем параметры
     args = parser.parse_args()
 
-    # Если train - обучаем модель, если predict - делаем предсказание
+    # Если train - обучаем модель, если normalize - делаем предсказание
     if args.mode == "train":
         if args.method == "dictionary":
             classifier.train_dict()
