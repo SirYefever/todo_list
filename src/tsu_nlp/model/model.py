@@ -5,35 +5,26 @@ from logging import exception
 import os
 from pathlib import Path
 
-#import optuna #
-import pandas as pd #
+import pandas as pd
 import sys
 import logging
-from logger import SingletonLogger
-#from clearml import Task, Logger
+from .logger import SingletonLogger
 import torch
 from transformers import T5ForConditionalGeneration, GPT2Tokenizer
 from tqdm import tqdm
 import onnxruntime as ort
 import numpy as np
 
-# Инициализация задачи ClearML
-# task = Task.init(
-#     project_name="Spaceship Titanic",
-#     task_name="CatBoost Model Training",
-#     tags=["classification", "catboost"]
-# )
-
 # Инициализация логгера
 logger = SingletonLogger().get_logger()
-# optuna_logger = optuna.logging.get_logger("optuna")
-# optuna_logger.handlers = logger.handlers
+
+project_root = Path(__file__).parent.parent.parent.parent.absolute()
 
 # Настройка кэширования модели
 os.environ['TRANSFORMERS_CACHE'] = 'models_cache'
 MODEL_NAME = "saarus72/russian_text_normalizer"
-ONNX_MODEL_PATH = "E:/dev/TSU.NLP_3/model_repository/text_normalization/1/model.onnx"
-ONNX_ENCODER_PATH = "E:/dev/TSU.NLP_3/model_repository/text_normalization/1/encoder_model.onnx"
+ONNX_MODEL_PATH = os.path.join(project_root, 'model_repository', 'text_normalization', '1', 'model.onnx')
+ONNX_ENCODER_PATH = os.path.join(project_root, 'model_repository', 'text_normalization', '1', 'encoder_model.onnx')
 
 class LoggerWriter:
     """
@@ -142,6 +133,17 @@ class My_TextNormalization_Model:
             lambda x: dictionary[x] if x in dictionary else x)
 
         def fcase(obefore, lbefore, after):
+            """
+            Сохраняет регистр оригинального текста при нормализации.
+            
+            Args:
+                obefore (str): Оригинальный текст с исходным регистром
+                lbefore (str): Оригинальный текст в нижнем регистре
+                after (str): Нормализованный текст
+                
+            Returns:
+                str: Нормализованный текст с сохраненным регистром оригинала, если текст не изменился
+            """
             if lbefore == after:
                 return obefore
             else:
@@ -323,9 +325,10 @@ class My_TextNormalization_Model:
 
     def normalize_text(self, test_mode=False):
         """
-        Нормализация текста с использованием предобученной T5 модели
+        Нормализация текста с использованием предобученной T5 модели.
+        
         Args:
-            test_mode (bool): If True, only process first 10 items for testing
+            test_mode (bool): Если True, обрабатывает только первые 10 элементов для тестирования
         """
         logger.info("Начало нормализации с использованием T5 модели...")
 
@@ -485,7 +488,7 @@ if __name__ == '__main__':
     # Указываем параметры необходимые к передаче
     parser = argparse.ArgumentParser(description="Обучение и нормализация.")
     parser.add_argument("mode", choices=["train", "normalize"], help="Режим работы: обучение или нормализация.")
-    parser.add_argument("method", choices=["dictionary", "neural", "two"], help="Метод обработки: словарем, машинным обучением или комбинированный.")
+    parser.add_argument("method", choices=["dictionary", "neural", "hybrid"], help="Метод обработки: словарем, машинным обучением или комбинированный.")
     parser.add_argument("--test", action="store_true", help="Запустить в тестовом режиме (только 10 элементов)")
     # parser.add_argument("--dataset", required=True, help="Полный путь к датасету для обучения или нормализации.")
 
@@ -501,5 +504,5 @@ if __name__ == '__main__':
             classifier.normalize_text_dict()
         elif args.method == "neural":
             classifier.normalize_text(test_mode=args.test)
-        elif args.method == "two":
+        elif args.method == "hybrid":
             classifier.normalize_two(test_mode=args.test)

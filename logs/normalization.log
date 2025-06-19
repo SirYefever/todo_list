@@ -1128,3 +1128,39 @@ ValueError: Required inputs (['encoder_attention_mask', 'encoder_hidden_states']
 2025-05-31 19:08:43,172 - tsu_nlp.model.logger.normalize_two - INFO - Доступные входы декодера: ['encoder_attention_mask', 'input_ids', 'encoder_hidden_states']
 2025-05-31 19:08:43,178 - tsu_nlp.model.logger.normalize_two - INFO - Размер батча: 32
 2025-05-31 19:08:43,182 - tsu_nlp.model.logger.write - ERROR - 0%|                                                                              | 0/690 [00:00<?, ?it/s]
+2025-06-18 21:58:51,192 - logger.normalize_two - INFO - Начало комбинированной нормализации (словарь + нейронная модель ONNX)...
+2025-06-18 21:58:51,194 - logger.normalize_two - INFO - Шаг 1: Применение словарной нормализации...
+2025-06-18 21:58:51,197 - logger.normalize_text_dict - INFO - Начало нормализации.
+2025-06-18 21:58:51,197 - logger.normalize_text_dict - INFO - Попытка считать словарь и файла E:\dev\TSU.NLP_3\data\dictionary\model_dictionary.json
+2025-06-18 21:58:52,115 - logger.normalize_text_dict - INFO - Попытка считать файл с данными E:\dev\TSU.NLP_3\data\inputs\ru_test_2.csv
+2025-06-18 21:59:13,964 - logger.normalize_two - INFO - Найдено 22067 токенов для нейронной нормализации
+2025-06-18 21:59:13,964 - logger.normalize_two - INFO - Шаг 2: Применение нейронной нормализации (ONNX) для оставшихся токенов...
+2025-06-18 21:59:13,966 - logger.normalize_two - INFO - Загрузка модели ONNX и токенизатора...
+2025-06-18 21:59:15,162 - logger.write - ERROR - tokenizer_config.json:   0%|                                                                                  | 0.00/20.3k [00:00<?, ?B/s]
+2025-06-18 21:59:15,165 - logger.write - ERROR - tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████████| 20.3k/20.3k [00:00<00:00, 9.71MB/s]
+2025-06-18 21:59:15,167 - logger.write - ERROR - E:\dev\TSU.NLP_3\.venv\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in E:\dev\TSU.NLP_3\models_cache\models--saarus72--russian_text_normalizer. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+2025-06-18 21:59:15,933 - logger.write - ERROR - vocab.json:   0%|                                                                                             | 0.00/1.81M [00:00<?, ?B/s]
+2025-06-18 21:59:16,444 - logger.write - ERROR - vocab.json: 100%|████████████████████████████████████████████████████████████████████████████████████| 1.81M/1.81M [00:00<00:00, 3.56MB/s]
+2025-06-18 21:59:16,445 - logger.write - ERROR - vocab.json: 100%|████████████████████████████████████████████████████████████████████████████████████| 1.81M/1.81M [00:00<00:00, 3.55MB/s]
+2025-06-18 21:59:16,847 - logger.write - ERROR - merges.txt:   0%|                                                                                             | 0.00/1.27M [00:00<?, ?B/s]
+2025-06-18 21:59:17,206 - logger.write - ERROR - merges.txt: 100%|████████████████████████████████████████████████████████████████████████████████████| 1.27M/1.27M [00:00<00:00, 3.54MB/s]
+2025-06-18 21:59:17,207 - logger.write - ERROR - merges.txt: 100%|████████████████████████████████████████████████████████████████████████████████████| 1.27M/1.27M [00:00<00:00, 3.53MB/s]
+2025-06-18 21:59:17,591 - logger.write - ERROR - added_tokens.json:   0%|                                                                                      | 0.00/2.72k [00:00<?, ?B/s]
+2025-06-18 21:59:17,592 - logger.write - ERROR - added_tokens.json: 100%|█████████████████████████████████████████████████████████████████████████████| 2.72k/2.72k [00:00<00:00, 2.72MB/s]
+2025-06-18 21:59:17,989 - logger.write - ERROR - special_tokens_map.json:   0%|                                                                                  | 0.00/688 [00:00<?, ?B/s]
+2025-06-18 21:59:17,990 - logger.write - ERROR - special_tokens_map.json: 100%|███████████████████████████████████████████████████████████████████████████████████| 688/688 [00:00<?, ?B/s]
+2025-06-18 21:59:18,466 - logger.normalize_two - WARNING - CUDA недоступен. Используется CPU для ONNX Runtime
+2025-06-18 21:59:35,325 - logger.normalize_two - INFO - Доступные входы энкодера: ['input_ids', 'attention_mask']
+2025-06-18 21:59:35,325 - logger.normalize_two - INFO - Доступные входы декодера: ['encoder_attention_mask', 'input_ids', 'encoder_hidden_states']
+2025-06-18 21:59:35,332 - logger.normalize_two - INFO - Размер батча: 2
+2025-06-18 21:59:35,333 - logger.write - ERROR - 0%|                                                                                                               | 0/5 [00:00<?, ?it/s]
+2025-06-18 21:59:38,478 - logger.write - ERROR - 20%|████████████████████▌                                                                                  | 1/5 [00:03<00:12,  3.15s/it]
+2025-06-18 21:59:41,955 - logger.write - ERROR - 40%|█████████████████████████████████████████▏                                                             | 2/5 [00:06<00:10,  3.34s/it]
+2025-06-18 21:59:43,976 - logger.write - ERROR - 60%|█████████████████████████████████████████████████████████████▊                                         | 3/5 [00:08<00:05,  2.74s/it]
+2025-06-18 21:59:46,256 - logger.write - ERROR - 80%|██████████████████████████████████████████████████████████████████████████████████▍                    | 4/5 [00:10<00:02,  2.56s/it]
+2025-06-18 21:59:49,931 - logger.write - ERROR - 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:14<00:00,  2.96s/it]
+2025-06-18 21:59:49,931 - logger.write - ERROR - 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:14<00:00,  2.92s/it]
+2025-06-18 21:59:49,932 - logger.normalize_two - INFO - Сохранение результатов в E:\dev\TSU.NLP_3\data\results\result_test.csv
+2025-06-18 21:59:50,479 - logger.normalize_two - INFO - Комбинированная нормализация успешно завершена

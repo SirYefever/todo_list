@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+models_cache/
+logs/
+*.log
+tests/
+model_repository/
+
+# Keep necessary files
+!data/dictionary/model_dictionary.json
+!data/inputs/ru_train.csv
+!data/inputs/ru_test_2.csv 

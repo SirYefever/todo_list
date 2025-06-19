@@ -10,11 +10,11 @@ logger = logging.getLogger(__name__)
 
 def export_model(model_path, output_dir):
     """
-    Export the T5 model to ONNX format for Triton deployment.
+    Экспортирует модель T5 в формат ONNX для развертывания в Triton.
     
     Args:
-        model_path: Path to the HuggingFace model
-        output_dir: Directory to save the exported model
+        model_path: Путь к модели HuggingFace
+        output_dir: Директория для сохранения экспортированной модели
     """
     try:
         # Create output directory
