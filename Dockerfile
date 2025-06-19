@@ -7,16 +7,6 @@ WORKDIR /app
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy only the requirements first to leverage Docker cache
-COPY pyproject.toml poetry.lock ./
-COPY src/ ./src/
-COPY data/ ./data/
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    git \
     curl \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
@@ -27,19 +17,17 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 # Add Poetry to PATH
 ENV PATH="/root/.local/bin:$PATH"
 
-# Copy only the requirements first to leverage Docker cache
+# Copy only the requirements files
 COPY pyproject.toml poetry.lock ./
 
 # Install dependencies
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi
 
-# Copy the source code
-COPY src/ ./src/
-COPY data/ ./data/
-
-# Create necessary directories
-RUN mkdir -p data/dictionary data/results data/inputs models_cache
+# Create necessary directories for volume mounting
+RUN mkdir -p /app/data/dictionary /app/data/results /app/data/inputs \
+    /app/models_cache \
+    /app/src
 
 # Set environment variables
 ENV PYTHONPATH=/app
@@ -48,4 +36,11 @@ ENV CUDA_VISIBLE_DEVICES=0
 
 # Default command to run the normalizer in neural mode
 ENTRYPOINT ["python", "-m", "src.tsu_nlp.model.model"]
-CMD ["normalize", "neural"] 
+CMD ["normalize", "neural"]
+
+# Usage instructions for volume mounting:
+# Run the container with the following volumes:
+# docker run -v /path/to/local/data:/app/data \
+#           -v /path/to/local/models_cache:/app/models_cache \
+#           -v /path/to/local/src:/app/src \
+#           your-image-name 

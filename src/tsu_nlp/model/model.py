@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 import sys
 import logging
-from logger import SingletonLogger
+from .logger import SingletonLogger
 import torch
 from transformers import T5ForConditionalGeneration, GPT2Tokenizer
 from tqdm import tqdm
@@ -100,10 +100,11 @@ class My_TextNormalization_Model:
             logger.info(f"Попытка записи словаря в файл {self.dictionary_path}")
             with open(self.dictionary_path, 'w', encoding='utf-8') as f:
                 json.dump(dictionary, f, indent=4, ensure_ascii=False)
+
+            logger.info(f"Процесс создания словаря завершен успешно.")
         except:
             logger.error(f"Не удалось записать словарь в файл.")
 
-        logger.info(f"Процесс создания словаря завершен успешно.")
 
     def normalize_text_dict(self):
         """
@@ -152,7 +153,7 @@ class My_TextNormalization_Model:
         test['after'] = test.apply(lambda r: fcase(r['before'], r['before_l'], r['after']), axis=1)
         return test
 
-    def normalize_two(self, test_mode=False):
+    def normalize_hybrid(self, test_mode=False):
         """
         Комбинированный метод нормализации, использующий сначала словарь, затем нейронную модель с ONNX
         Args:
